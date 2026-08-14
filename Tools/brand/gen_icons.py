@@ -5,37 +5,45 @@
 
 - 所有 *.appiconset(AppIcon / .dev / .beta / WatchIcon* / AlternateIcons/*):
   依 Contents.json 逐項以壓平(不透明)品牌 icon 覆寫,尺寸 = size × scale
-- 品牌 logo imagesets(透明背景,1024px):launchScreen-logo、Logo、
+- AlternateIconsPreview 的 icon-*.imageset 一併覆寫(不透明,否則 picker 殘留 HA 預覽)
+- 品牌 logo imagesets(透明背景,1024px):launchScreen-logo、Logo、logo-in-circle、
   logo-horizontal-text、casita、casita-dark、statusItemIcon、RoundLogo、
   TemplateLogo、Complication 下的 imageset
-- PDF 項目改為 PNG 並改寫 Contents.json filename
+- 非 PNG 項目(pdf/jpg)改為 PNG 並改寫 Contents.json filename
 - 保留(第三方標誌): improv-logo、thread、ha-cloud-logo
+- 已知降級(記錄於 inventory): dark/tinted appearance 一律同一張壓平圖
 渲染引擎: Tools/brand/icon_tool.swift(CoreGraphics,無外部依賴)
 """
 import argparse
 import glob
 import json
 import os
+import shutil
 import subprocess
 import sys
+import tempfile
 
 KEEP = {"improv-logo.imageset", "thread.imageset", "ha-cloud-logo.imageset"}
 LOGO_IMAGESETS = {
-    "launchScreen-logo.imageset", "Logo.imageset", "logo-horizontal-text.imageset",
-    "casita.imageset", "casita-dark.imageset", "statusItemIcon.imageset",
-    "RoundLogo.imageset", "TemplateLogo.imageset",
+    "launchScreen-logo.imageset", "Logo.imageset", "logo-in-circle.imageset",
+    "logo-horizontal-text.imageset", "casita.imageset", "casita-dark.imageset",
+    "statusItemIcon.imageset", "RoundLogo.imageset", "TemplateLogo.imageset",
 }
 TOOL = "Tools/brand/icon_tool.swift"
+_cache_dir = tempfile.mkdtemp(prefix="brandicons-")
 _cache: dict = {}
 
 
 def render(logo: str, bg: str, size: int, out: str) -> None:
+    """每種 (bg,size) 只渲染一次到快取目錄,再複製到目的地(絕不 cp 同檔)。"""
     key = (bg, size)
-    if key in _cache:
-        subprocess.run(["cp", _cache[key], out], check=True)
-        return
-    subprocess.run(["swift", TOOL, logo, bg, str(size), out], check=True, capture_output=True)
-    _cache[key] = out
+    if key not in _cache:
+        cached = os.path.join(_cache_dir, f"{bg}-{size}.png")
+        subprocess.run(["swift", TOOL, logo, bg, str(size), cached],
+                       check=True, capture_output=True)
+        _cache[key] = cached
+    if os.path.abspath(_cache[key]) != os.path.abspath(out):
+        shutil.copyfile(_cache[key], out)
 
 
 def px(entry: dict) -> int:
@@ -53,20 +61,25 @@ def do_iconset(path: str, logo: str, bg: str) -> int:
     with open(cj) as f:
         data = json.load(f)
     n = 0
+    seen_out = set()
     for entry in data.get("images", []):
         fn = entry.get("filename")
         if not fn:
             continue
-        target = os.path.join(path, fn)
-        if fn.lower().endswith(".pdf"):
-            newfn = os.path.splitext(fn)[0] + ".png"
+        stem, ext = os.path.splitext(fn)
+        if ext.lower() != ".png":
+            newfn = stem + ".png"
+            old = os.path.join(path, fn)
+            if os.path.exists(old):
+                os.remove(old)
             entry["filename"] = newfn
-            if os.path.exists(target):
-                os.remove(target)
-            target = os.path.join(path, newfn)
+            fn = newfn
+        target = os.path.join(path, fn)
+        if target in seen_out:
+            continue  # 同檔被多個 appearance 條目引用,渲染一次即可
+        seen_out.add(target)
         render(logo, bg, px(entry), target)
         n += 1
-    # PDF→PNG 後向量屬性失效
     if data.get("properties", {}).get("preserves-vector-representation"):
         del data["properties"]["preserves-vector-representation"]
     with open(cj, "w") as f:
@@ -90,15 +103,21 @@ def main() -> None:
                        glob.glob("WatchApp/**/*.appiconset", recursive=True)):
         files += do_iconset(path, args.logo, args.bg)
         sets += 1
-    # 2) 品牌 logo imagesets(保留透明度)
+    # 2) icon picker 預覽圖(不透明)
+    for path in sorted(glob.glob("Sources/**/AlternateIconsPreview/*.imageset", recursive=True)):
+        files += do_iconset(path, args.logo, args.bg)
+        sets += 1
+    # 3) 品牌 logo imagesets(保留透明度)
     for path in sorted(glob.glob("Sources/**/*.imageset", recursive=True)):
         base = os.path.basename(path)
-        if base in KEEP:
+        if base in KEEP or "/AlternateIconsPreview/" in path:
             continue
         if base in LOGO_IMAGESETS or "/Complication.complicationset/" in path:
             files += do_iconset(path, args.logo, "none")
             sets += 1
-    print(f"  ✓ 資產覆寫 {sets} 組 / {files} 檔(快取渲染 {len(_cache)} 種尺寸)")
+    if sets == 0:
+        raise SystemExit("沒有命中任何 iconset — glob 失效?")
+    print(f"  ✓ 資產覆寫 {sets} 組 / {files} 檔(渲染 {len(_cache)} 種尺寸)")
 
 
 if __name__ == "__main__":

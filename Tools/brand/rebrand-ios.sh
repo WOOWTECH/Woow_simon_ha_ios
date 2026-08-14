@@ -108,8 +108,10 @@ strip_key "$ENT/dev/Extension-ios.entitlements" "com.apple.developer.networking.
 ok "dev 精簡版產生（拔 aps/applinks/NFC/Siri/wifi-info/通訊通知）"
 
 # pbxproj 的 CODE_SIGN_ENTITLEMENTS 改走 $(ENTITLEMENTS_VARIANT)
-perl -pi -e 's{CODE_SIGN_ENTITLEMENTS(\[[^\]]*\])? = "?Configuration/Entitlements/([A-Za-z-]+\.entitlements)"?;}{CODE_SIGN_ENTITLEMENTS$1 = "Configuration/Entitlements/\$(ENTITLEMENTS_VARIANT)/$2";}g' "$PBX"
+# 兩種形態都要吃: CODE_SIGN_ENTITLEMENTS = path; 與 "CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "path";
+perl -pi -e 's{("?)CODE_SIGN_ENTITLEMENTS((?:\[[^\]]*\])?)("?) = "?(Configuration/Entitlements/[A-Za-z-]+\.entitlements)"?;}{my ($q1,$br,$q3,$p)=($1,$2,$3,$4); $p =~ s|Entitlements/|Entitlements/\$(ENTITLEMENTS_VARIANT)/|; "${q1}CODE_SIGN_ENTITLEMENTS${br}${q3} = \"${p}\";"}ge' "$PBX"
 grep -q 'ENTITLEMENTS_VARIANT' "$PBX" || die "pbxproj CODE_SIGN_ENTITLEMENTS 改寫沒命中"
+! grep -E 'CODE_SIGN_ENTITLEMENTS[^=]* = "?Configuration/Entitlements/[A-Za-z-]+\.entitlements' "$PBX" >/dev/null || die "仍有 CODE_SIGN_ENTITLEMENTS 未改走 ENTITLEMENTS_VARIANT(catalyst 引號形態?)"
 ok "pbxproj CODE_SIGN_ENTITLEMENTS → \$(ENTITLEMENTS_VARIANT)"
 grep -q '^ENTITLEMENTS_VARIANT' Configuration/HomeAssistant.debug.xcconfig 2>/dev/null || \
   printf '\nENTITLEMENTS_VARIANT = dev\n' >> Configuration/HomeAssistant.debug.xcconfig
@@ -146,7 +148,7 @@ ok "測試 fixtures"
 # ---------------------------------------------------------------------------
 say "5/10 顯示名稱（PRODUCT_NAME / CFBundleDisplayName）"
 must_sed "$PBX" "s|PRODUCT_NAME = HomeAssistant;|PRODUCT_NAME = ${APP_NAME_C99};|g" "PRODUCT_NAME = ${APP_NAME_C99}"
-must_sed "$PBX" "s|PRODUCT_NAME = \"Home Assistant Δ\";|PRODUCT_NAME = \"${APP_NAME} Δ\";|g" "App Debug 顯示名（Δ 保留）"
+must_sed "$PBX" "s|Home Assistant Δ|${APP_NAME} Δ|g" "App Debug 顯示名 + TEST_HOST（Δ 保留）"
 must_sed "$PBX" "s|PRODUCT_NAME = \"Home Assistant Launcher\";|PRODUCT_NAME = \"${APP_NAME} Launcher\";|g" "Launcher 顯示名"
 sedi "s|PRODUCT_NAME = \"Home Assistant\";|PRODUCT_NAME = \"${APP_NAME}\";|g" "$PBX"
 ok "App Release 顯示名"
@@ -210,25 +212,29 @@ say "9/10 官網/文件入口連結 → https://${BRAND_HOST}（STUN/推播 API/
 DOCFILES=(
   Sources/Shared/Environment/AppConstants.swift
   Sources/Shared/ExternalLink.swift
-  Sources/App/Scenes/MainWindowGroupCommands.swift
+  Sources/App/MainWindowGroupCommands.swift
   Sources/App/AppDelegate.swift
-  Sources/App/Settings/SettingsView.swift
-  Sources/Extensions/Watch/ComplicationEditView.swift
-  Sources/Extensions/Watch/ComplicationListView.swift
-  Sources/App/Notifications/NotificationCategoryListView.swift
+  Sources/App/Settings/Settings/SettingsView.swift
+  Sources/App/Settings/AppleWatch/Complications/ComplicationEditView.swift
+  Sources/App/Settings/AppleWatch/Complications/ComplicationListView.swift
+  Sources/App/Settings/Notifications/NotificationCategoryListView.swift
   Sources/App/Settings/Notifications/NotificationSettingsView.swift
   Sources/App/Settings/Notifications/NotificationCategoryEditorView.swift
   Sources/App/Settings/Notifications/NotificationSoundsView.swift
-  Sources/Shared/Alerts/ServerAlerter.swift
+  Sources/Shared/Environment/ServerAlerter.swift
 )
 for f in "${DOCFILES[@]}"; do
-  if [[ -f "$f" ]]; then
-    sedi "s|https://companion\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://www\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://alerts\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://github\.com/home-assistant/iOS|https://${BRAND_HOST}|g; s|https://community\.home-assistant\.io|https://${BRAND_HOST}|g" "$f"
-  else
-    echo "  (skip 不存在: $f)"
-  fi
+  [[ -f "$f" ]] || die "DOCFILES 路徑不存在(檔案被移動?): $f"
+  sedi "s|https://companion\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://www\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://alerts\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://github\.com/home-assistant/iOS|https://${BRAND_HOST}|g; s|https://community\.home-assistant\.io|https://${BRAND_HOST}|g; s|https://twitter\.com/home_assistant|https://${BRAND_HOST}|g; s|https://www\.facebook\.com/[A-Za-z0-9]*|https://${BRAND_HOST}|g; s|https://ohf\.to/[A-Za-z/-]*|https://${BRAND_HOST}|g" "$f"
 done
-ok "入口連結替換（stun./mobile-apps./my. 開頭者不動）"
+ok "入口連結替換（stun./mobile-apps./my. 開頭與 mac Updater 不動）"
+
+# 註解裡的 homeassistant:// 也換掉（紅隊: 全數為註解,安全;避免 preflight 誤判與文件誤導）
+for f in Sources/App/HAApp.swift Sources/App/Frontend/IncomingURLHandler.swift \
+         Sources/Shared/Environment/AppConstants.swift; do
+  sedi "s|homeassistant://|${URL_SCHEME}://|g" "$f"
+done
+ok "註解殘留清除 ×3 檔"
 
 # ---------------------------------------------------------------------------
 say "10/10 完成 — 後續動作"

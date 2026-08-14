@@ -66,9 +66,13 @@ def main() -> None:
     # 4. pbxproj
     pbx = read("HomeAssistant.xcodeproj/project.pbxproj")
     check("ENV_URL_HANDLER 已換", f'ENV_URL_HANDLER = "{scheme}"' in pbx or f"ENV_URL_HANDLER = {scheme}" in pbx)
-    check("ENV_URL_HANDLER 無殘留", "homeassistant" not in [m.lower() for m in re.findall(r"ENV_URL_HANDLER = \"?([\w-]+)\"?;", pbx)])
+    check("ENV_URL_HANDLER 無殘留",
+          not any("homeassistant" in m.lower() for m in re.findall(r"ENV_URL_HANDLER = \"?([\w-]+)\"?;", pbx)))
     check("ENTITLEMENTS_VARIANT 佈線", "$(ENTITLEMENTS_VARIANT)" in pbx)
+    check("CODE_SIGN_ENTITLEMENTS 全數改道(含 catalyst 引號形態)",
+          not re.search(r'CODE_SIGN_ENTITLEMENTS[^=]*= "?Configuration/Entitlements/[A-Za-z-]+\.entitlements', pbx))
     check("PRODUCT_NAME 無 Home Assistant", 'PRODUCT_NAME = "Home Assistant' not in pbx and "PRODUCT_NAME = HomeAssistant;" not in pbx)
+    check("TEST_HOST 無舊 app 名", "Home Assistant Δ.app" not in pbx)
 
     # 5. entitlements
     for f in glob.glob("Configuration/Entitlements/**/*.entitlements", recursive=True):
@@ -117,6 +121,19 @@ def main() -> None:
 
     # 10. 授權合規
     check("LICENSE.md 保留", os.path.exists("LICENSE.md"))
+
+    # 11. CI 安全網(決策 13;種入 commit 應已拔除)
+    check("Lokalise cron workflow 已移除",
+          not os.path.exists(".github/workflows/download_localized_strings.yml"))
+
+    # 12. 入口連結殘留(§8;stun./mobile-apps./my./demo 為刻意保留)
+    r = subprocess.run(["grep", "-rln", "--include=*.swift",
+                        "-e", "companion.home-assistant.io", "-e", "alerts.home-assistant.io",
+                        "Sources/"], capture_output=True, text=True)
+    left = [l for l in r.stdout.splitlines()
+            if "WebViewExternalBusMessage" not in l and "WhatsNewCatalog" not in l
+            and "ConnectionInfo+WebView" not in l]
+    check("無 companion/alerts.home-assistant.io 入口殘留", not left, str(left[:5]))
 
     print("\n=== preflight 結果 ===")
     for p in PASSES:
