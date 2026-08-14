@@ -21,9 +21,11 @@
 
 | # | 變更 | commit | 說明 |
 |---|---|---|---|
-| 1 | (待補)停用 `.github/workflows` | — | 決策 13;Lokalise sync 最優先 |
-| 2 | (待補)`Configuration/Brand.xcconfig` 品牌參數層 | — | §6.4;拼接規則 `.HomeAssistant` → `.$(BRAND_BUNDLE_BASE)` |
-| 3 | (待補)entitlements 雙軌(dev 精簡/release 完整) | — | 決策 15 |
-| 4 | (待補)OnboardingAuthDetails OAuth 常數 | — | §7.2-3 |
-| 5 | (待補)rebrand 字串/assets | — | §7.2 |
+| 1 | 停用 `.github/workflows` | ea7f9c382 | 決策 13;整批移除(Lokalise cron 為主因),preflight 有迴歸檢查 |
+| 2 | `Configuration/Brand.xcconfig` + 拼接規則 `.HomeAssistant` → `.$(BRAND_BUNDLE_BASE)` | 95dcf028b | §6.4;xcconfig × entitlements × WatchApp/Watch-ext Info.plist 三方一致 |
+| 3 | entitlements 雙軌(dev 精簡/release 完整,`$(ENTITLEMENTS_VARIANT)` 佈線) | 95dcf028b | 決策 15;Debug=dev、Release=release;PushProvider 免費 Team 不可簽,實機期需自 scheme 排除 |
+| 4 | OAuth 常數:clientID → woowtech.github.io Android 頁,Debug/Release 統一 `simonhome`(dev 變體捨棄——client_id 頁只宣告 simonhome,Debug 裝機需可登入) | 95dcf028b | §7.2-3 + 決策 10 |
+| 5 | rebrand 字串(3934 條/139 檔/34 語系)+ assets(79 組;dark/tinted appearance 一律同一張壓平圖,已知降級)+ 品牌色 #0060A6 + 入口連結 → aiot.simon.io(STUN/mobile-apps 推播 API/NFC tag host/my.ha/demo/mac Updater 刻意保留)+ Nabu Casa「Home Assistant Cloud」字串保留(第三方產品名) | 95dcf028b | §7.2;preflight 66 項全過 |
+| 6 | GoogleService-Info-*.plist 保留 io.robbie(HA 官方 Firebase 專案 config;bundle ID 不符 → Firebase 靜默不回報,符合最小移植意圖) | — | 未來若需自有分析/推播再換自己的 Firebase 專案 |
+| 7 | Watch extension `WKAppBundleIdentifier` 拼接修正(裝機 blocker,inventory 漏項) | (本 commit) | 已回饋基底腳本 + preflight 迴歸檢查 |
 
