@@ -4,9 +4,9 @@ import XCTest
 class URLComponentsWidgetAuthenticityTests: XCTestCase {
     func testNotAuthentic() throws {
         for urlString in [
-            "homeassistant://navigate/bad",
-            "homeassistant://navigate/bad?widgetAuthenticity=fake",
-            "homeassistant://navigate/bad?widgetAuthenticity=",
+            "simonhome://navigate/bad",
+            "simonhome://navigate/bad?widgetAuthenticity=fake",
+            "simonhome://navigate/bad?widgetAuthenticity=",
         ] {
             var components = try XCTUnwrap(URLComponents(string: urlString))
             XCTAssertFalse(components.popWidgetAuthenticity())
@@ -17,11 +17,11 @@ class URLComponentsWidgetAuthenticityTests: XCTestCase {
     func testInsertRemoveDoesntChangeString() throws {
         for urlString in [
             // no query string
-            "homeassistant://navigate/good",
+            "simonhome://navigate/good",
             // some query string
-            "homeassistant://navigate/good?example=test&dog=cat",
+            "simonhome://navigate/good?example=test&dog=cat",
             // already has one for some reason and it's bad
-            "homeassistant://navigate/good?widgetAuthenticity=bad",
+            "simonhome://navigate/good?widgetAuthenticity=bad",
         ] {
             do {
                 var components = try XCTUnwrap(URLComponents(string: urlString))
@@ -49,7 +49,7 @@ class URLComponentsWidgetAuthenticityTests: XCTestCase {
         let server = servers.all[0]
         Current.servers = servers
 
-        var baseUrl = try XCTUnwrap(URLComponents(string: "homeassistant://navigate/path"))
+        var baseUrl = try XCTUnwrap(URLComponents(string: "simonhome://navigate/path"))
         baseUrl.insertWidgetServer(server: server)
 
         XCTAssertNil(baseUrl.popWidgetServer(isFromWidget: false))

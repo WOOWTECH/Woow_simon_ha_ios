@@ -1,17 +1,16 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "ha-logo-watch.png",
-      "idiom" : "universal"
+      "filename": "ha-logo-watch.png",
+      "idiom": "universal"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   },
-  "properties" : {
-    "auto-scaling" : "auto",
-    "preserves-vector-representation" : true,
-    "template-rendering-intent" : "template"
+  "properties": {
+    "auto-scaling": "auto",
+    "template-rendering-intent": "template"
   }
 }

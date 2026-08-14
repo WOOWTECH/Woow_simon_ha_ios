@@ -291,7 +291,7 @@ struct LiveActivitySettingsView: View {
                     progressMax: 100,
                     countdownSeconds: 5 * 60,
                     icon: "mdi:home-assistant",
-                    color: "#03A9F4"
+                    color: "#0060A6"
                 )]
             ),
             LiveActivitySample(

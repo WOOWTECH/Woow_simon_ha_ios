@@ -1,12 +1,12 @@
 "0aqrcy" = "失败: ${error}";
-"2KWKqM" = "失败：Home Assistant 不可达";
+"2KWKqM" = "失败：Simon SmartHome 不可达";
 "2LIxe4" = "失败：${error}";
 "2b0Uo4" = "服务";
 "2yevCF" = "您想使用哪条管道？";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "已更新";
 "4tpAXn" = "确认一下，你希望是“${server}” ？";
-"5ZzwZD" = "失败：Home Assistant 当前不可达";
+"5ZzwZD" = "失败：Simon SmartHome 当前不可达";
 "5bVvn0" = "位置更新失败: ${error}";
 "637QjD" = "错误";
 "6ozAdN" = "相机图像";
@@ -29,7 +29,7 @@
 "DsasVx" = "错误";
 "EA0zLv" = "有 ${count} 个选项匹配“${server}”。";
 "EWqRDj" = "失败: ${error}";
-"FBQiVD" = "调用指定Home Assistant 服务器上的服务，并传入服务所需数据。";
+"FBQiVD" = "调用指定Simon SmartHome 服务器上的服务，并传入服务所需数据。";
 "FZ9qkT" = "z - (Deprecated) 渲染模板";
 "FtQqoU" = "位置已更新";
 "GiSjQE" = "失败：${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "确认一下，你希望是“${server}” ？";
 "JFaYRG" = "只为确认，您想使用“${pipeline}” ？";
 "K4xrvF" = "错误";
-"KHH48D" = "失败：Home Assistant 当前不可达";
+"KHH48D" = "失败：Simon SmartHome 当前不可达";
 "KJS2jk" = "失败: ${error}";
 "KM7mXC" = "动作";
 "KSmKl0" = "${domain}.${service}已调用";
@@ -52,7 +52,7 @@
 "MwEpGz" = "完成";
 "N9iJpK" = "z - (Deprecated) 获取相机图像";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "渲染Home Assistant模板";
+"NdG9Jz" = "渲染Simon SmartHome模板";
 "NsbUTz" = "相机实体";
 "Q2Qp4a" = "动作";
 "QCGKRz" = "哪种语言 ？";
@@ -60,9 +60,9 @@
 "QmGpOH" = "错误";
 "R2PmrD" = "您需要语音协助吗？";
 "RCQAlr" = "z - (Deprecated) 获取图像 ${cameraID}";
-"RMQY3r" = "发送指定的位置到Home Assistant。";
+"RMQY3r" = "发送指定的位置到Simon SmartHome。";
 "RsOw3P" = "模板渲染成功";
-"T06Fka" = "打开Home Assistant应用程序并跳转到指定页面。";
+"T06Fka" = "打开Simon SmartHome应用程序并跳转到指定页面。";
 "U4u9Xz" = "有 ${count} 个选项匹配“${server}”。";
 "ULka1b" = "动作";
 "VP2XpM" = "事件数据";
@@ -74,7 +74,7 @@
 "YxAau3" = "有 ${count} 个选项匹配“${server}”。";
 "ZApPxB" = "服务名称";
 "ZG5nuL" = "z - (Deprecated) 应用中语音助手";
-"ZRPVYO" = "打开Home Assistant应用程序并跳转到指定页面。";
+"ZRPVYO" = "打开Simon SmartHome应用程序并跳转到指定页面。";
 "ZT9Mld" = "事件名称";
 "ZmUm9Q" = "您想渲染什么模板 ？";
 "Zoqsph" = "页";
@@ -82,7 +82,7 @@
 "am5G4A" = "确认一下，你希望是“${server}” ？";
 "cK9jdK" = "失败: ${error}";
 "cLmTme" = "动作";
-"cuflz3" = "失败：Home Assistant 当前不可达";
+"cuflz3" = "失败：Simon SmartHome 当前不可达";
 "d65H6l" = "z - (Deprecated) 语音助手用于“${text}”";
 "dFHPYK" = "已执行”${action}“";
 "eObn2i" = "页";
@@ -91,13 +91,13 @@
 "fkQXDn" = "有 ${count} 个选项与”${action}“匹配。";
 "flUgtx" = "哪个动作 ？";
 "fnz838" = "传感器已更新";
-"foI0Fv" = "失败：Home Assistant 当前不可达";
+"foI0Fv" = "失败：Simon SmartHome 当前不可达";
 "ftQHJw" = "哪个服务器 ？";
 "fuRWMi" = "z - (Deprecated) 向HomeAsssiant发送此位置 ${location}";
 "g8g7Af" = "执行此动作";
 "gI3mme" = "您想发送什么服务数据 ？";
 "gePUyy" = "位置";
-"glRCfJ" = "失败：Home Assistant 当前不可达";
+"glRCfJ" = "失败：Simon SmartHome 当前不可达";
 "gv7Gg6" = "位置";
 "h1xQ53" = "z - (Deprecated) 更新传感器";
 "hKNPaD" = "服务器";
@@ -115,7 +115,7 @@
 "lGqSSG" = "更新传感器失败";
 "lNmaCR" = "模板";
 "lxHlyQ" = "z - (Deprecated) 触发事件";
-"mAibJP" = "失败：Home Assistant 当前不可达";
+"mAibJP" = "失败：Simon SmartHome 当前不可达";
 "mJ6CrP" = "发送 ${eventName} 失败：${error}";
 "mZnRHS" = "事件${eventName}已触发";
 "mi6B62" = "您想发送此事件的什么数据 ？";
@@ -126,7 +126,7 @@
 "oHn0vD" = "页面";
 "oIWFyR" = "失败: ${error}";
 "onq5yE" = "调用服务失败，错误信息：${error}。";
-"pQhTjo" = "失败：Home Assistant 当前不可达";
+"pQhTjo" = "失败：Simon SmartHome 当前不可达";
 "pjQR7t" = "z - (Deprecated) 更新传感器";
 "qYpzmu" = "哪些页面 ？";
 "qayMH6" = "z - (Deprecated) 调用服务";
@@ -145,9 +145,9 @@
 "tycImk" = "执行应用程序中定义的某个动作。";
 "uqeIcc" = "z - (Deprecated) 语音助手用于“${text}”";
 "v7TSD5" = "z - (Deprecated) 发送位置";
-"vAIAF2" = "发送传感器更新到 Home Assistant";
+"vAIAF2" = "发送传感器更新到 Simon SmartHome";
 "vebd70" = "服务器";
-"wfPQQQ" = "将事件发送到Home Assistant事件总线";
+"wfPQQQ" = "将事件发送到Simon SmartHome事件总线";
 "x7FAm9" = "z - (Deprecated) （旧版）应用内语音助手";
 "xN51te" = "结果";
 "xfXG6b" = "哪个服务器 ？";

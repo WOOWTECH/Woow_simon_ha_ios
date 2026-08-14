@@ -171,7 +171,7 @@ struct SettingsView: View {
                 ForEach(SettingsItem.helpItems, id: \.self) { item in
                     if item == .help {
                         Button {
-                            if let url = URL(string: "https://companion.home-assistant.io") {
+                            if let url = URL(string: "https://aiot.simon.io") {
                                 openURLInBrowser(url, viewControllerProvider.viewController)
                             }
                         } label: {

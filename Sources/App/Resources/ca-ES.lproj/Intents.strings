@@ -1,12 +1,12 @@
 "0aqrcy" = "Ha fallat: ${error}";
-"2KWKqM" = "Ha Fallat: Home Assistant no és accessible";
+"2KWKqM" = "Ha Fallat: Simon SmartHome no és accessible";
 "2LIxe4" = "Ha fallat: ${error}";
 "2b0Uo4" = "Servei";
 "2yevCF" = "Which pipeline do you want to use?";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "Actualitzat";
 "4tpAXn" = "Només per confirmar, volieu \"${server}\"?";
-"5ZzwZD" = "Ha Fallat: Home Assistant no està accessible actualment";
+"5ZzwZD" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "5bVvn0" = "No s'ha pogut actualitzar la ubicació: ${error}";
 "637QjD" = "Error";
 "6ozAdN" = "Imatge de la càmera";
@@ -29,7 +29,7 @@
 "DsasVx" = "Error";
 "EA0zLv" = "Hi ha ${count} opcions que coincideixen amb ‘${server}’.";
 "EWqRDj" = "Ha fallat: ${error}";
-"FBQiVD" = "Crida un servei de la instància de Home Assistant";
+"FBQiVD" = "Crida un servei de la instància de Simon SmartHome";
 "FZ9qkT" = "z - (Deprecated) Renderitza la plantilla";
 "FtQqoU" = "Ubicació actualitzada";
 "GiSjQE" = "Ha fallat: ${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "Només per confirmar, volieu \"${server}\"?";
 "JFaYRG" = "Just to confirm, you wanted ‘${pipeline}’?";
 "K4xrvF" = "Error";
-"KHH48D" = "Ha Fallat: Home Assistant no està accessible actualment";
+"KHH48D" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "KJS2jk" = "Ha fallat: ${error}";
 "KM7mXC" = "Acció";
 "KSmKl0" = "Anomenat ${domain}.${service}";
@@ -52,7 +52,7 @@
 "MwEpGz" = "Fet!";
 "N9iJpK" = "z - (Deprecated) Obtenir imatge de la càmera";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "Renderitzar la plantilla de Home Assistant";
+"NdG9Jz" = "Renderitzar la plantilla de Simon SmartHome";
 "NsbUTz" = "Entitat de la càmera";
 "Q2Qp4a" = "Acció";
 "QCGKRz" = "Quin idioma?";
@@ -60,7 +60,7 @@
 "QmGpOH" = "Error";
 "R2PmrD" = "Do you want assistance using voice?";
 "RCQAlr" = "z - (Deprecated) Obtenir la imatge de ${cameraID}";
-"RMQY3r" = "Envia la ubicació a Home Assistant";
+"RMQY3r" = "Envia la ubicació a Simon SmartHome";
 "RsOw3P" = "Plantilla renderitzada correctament";
 "T06Fka" = "Obriu una pàgina a la interfície";
 "U4u9Xz" = "Hi ha ${count} opcions que coincideixen amb ´${server}´.";
@@ -82,7 +82,7 @@
 "am5G4A" = "Només per confirmar, volieu \"${server}\"?";
 "cK9jdK" = "Ha fallat: ${error}";
 "cLmTme" = "Acció";
-"cuflz3" = "Ha Fallat: Home Assistant no està accessible actualment";
+"cuflz3" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "d65H6l" = "z - (Deprecated) Ajuda amb \"${text}\"";
 "dFHPYK" = "S'ha realitzat ${action}";
 "eObn2i" = "Pàgina";
@@ -91,13 +91,13 @@
 "fkQXDn" = "Hi ha ${count} opcions que coincideixen amb `${action}`.";
 "flUgtx" = "Quina acció?";
 "fnz838" = "Sensors actualitzats";
-"foI0Fv" = "Ha Fallat: Home Assistant no està accessible actualment";
+"foI0Fv" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "ftQHJw" = "Quin servidor?";
-"fuRWMi" = "z - (Deprecated) Envia ${location} a Home Assistant";
+"fuRWMi" = "z - (Deprecated) Envia ${location} a Simon SmartHome";
 "g8g7Af" = "Realitza l'acció";
 "gI3mme" = "Quines dades de servei voleu enviar?";
 "gePUyy" = "Ubicació";
-"glRCfJ" = "Ha Fallat: Home Assistant no està accessible actualment";
+"glRCfJ" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "gv7Gg6" = "Ubicació";
 "h1xQ53" = "z - (Deprecated) Actualitzar sensors";
 "hKNPaD" = "Servidor";
@@ -115,7 +115,7 @@
 "lGqSSG" = "No s'han pogut actualitzar els sensors.";
 "lNmaCR" = "Plantilla";
 "lxHlyQ" = "z - (Deprecated) Dispara un esdeveniment";
-"mAibJP" = "Ha Fallat: Home Assistant no està accessible actualment";
+"mAibJP" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "mJ6CrP" = "No s'ha pogut enviar ${eventName}: ${error}";
 "mZnRHS" = "${eventName} disparat";
 "mi6B62" = "Quines dades voleu enviar amb l’esdeveniment?";
@@ -126,7 +126,7 @@
 "oHn0vD" = "Pàgines";
 "oIWFyR" = "Ha fallat: ${error}";
 "onq5yE" = "Error en cridar el servei amb error: ${error}";
-"pQhTjo" = "Ha Fallat: Home Assistant no està accessible actualment";
+"pQhTjo" = "Ha Fallat: Simon SmartHome no està accessible actualment";
 "pjQR7t" = "z - (Deprecated) Actualitzar sensors";
 "qYpzmu" = "Quines pàgines?";
 "qayMH6" = "z - (Deprecated) Crida un servei";
@@ -145,9 +145,9 @@
 "tycImk" = "Realitza una acció definida a l'aplicació";
 "uqeIcc" = "z - (Deprecated) Ajuda amb \"${text}\"";
 "v7TSD5" = "z - (Deprecated) Envia la ubicació";
-"vAIAF2" = "Envia una actualització del sensor a Home Assistant";
+"vAIAF2" = "Envia una actualització del sensor a Simon SmartHome";
 "vebd70" = "Servidor";
-"wfPQQQ" = "Dispara un esdeveniment al bus d’esdeveniments del Home Assistant";
+"wfPQQQ" = "Dispara un esdeveniment al bus d’esdeveniments del Simon SmartHome";
 "x7FAm9" = "z - (Deprecated) Assist In App";
 "xN51te" = "Resultat";
 "xfXG6b" = "Quin servidor?";

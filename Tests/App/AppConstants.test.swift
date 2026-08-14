@@ -130,8 +130,8 @@ struct AppConstantsTests {
         // Slash-less HA path — rooted so it still navigates the frontend.
         assert(normalized("map/0") == "/map/0")
         // Deep links are left untouched — the URL handler processes them as deep links.
-        assert(normalized("homeassistant://navigate/map/0") == "homeassistant://navigate/map/0")
-        assert(normalized("homeassistant-dev://navigate/map/0") == "homeassistant-dev://navigate/map/0")
+        assert(normalized("simonhome://navigate/map/0") == "simonhome://navigate/map/0")
+        assert(normalized("simonhome://navigate/map/0") == "simonhome://navigate/map/0")
         // External URLs — untouched so they open in the browser.
         assert(normalized("https://google.com") == "https://google.com")
         assert(normalized("https://www.google.com") == "https://www.google.com")

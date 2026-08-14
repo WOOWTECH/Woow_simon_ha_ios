@@ -99,17 +99,17 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "about.help_localize.title") }
     }
     public enum HomeAssistantOnFacebook {
-      /// Home Assistant on Facebook
+      /// Simon SmartHome on Facebook
       public static var title: String { return L10n.tr("Localizable", "about.home_assistant_on_facebook.title") }
     }
     public enum HomeAssistantOnTwitter {
-      /// Home Assistant on Twitter
+      /// Simon SmartHome on Twitter
       public static var title: String { return L10n.tr("Localizable", "about.home_assistant_on_twitter.title") }
     }
     public enum Logo {
-      /// Home Assistant Companion
+      /// Simon SmartHome
       public static var appTitle: String { return L10n.tr("Localizable", "about.logo.app_title") }
-      /// Home Assistant
+      /// Simon SmartHome
       public static var title: String { return L10n.tr("Localizable", "about.logo.title") }
     }
     public enum Review {
@@ -187,9 +187,9 @@ public enum L10n {
   public enum Alerts {
     public enum ActionAutomationEditor {
       public enum Unavailable {
-        /// To automatically create an automation for an Action please update your Home Assistant to at least version 2024.2
+        /// To automatically create an automation for an Action please update your Simon SmartHome to at least version 2024.2
         public static var body: String { return L10n.tr("Localizable", "alerts.action_automation_editor.unavailable.body") }
-        /// Please update Home Assistant
+        /// Please update Simon SmartHome
         public static var title: String { return L10n.tr("Localizable", "alerts.action_automation_editor.unavailable.title") }
       }
     }
@@ -222,7 +222,7 @@ public enum L10n {
       }
     }
     public enum NavigationError {
-      /// This page cannot be displayed because it's outside your Home Assistant server or the page was not found.
+      /// This page cannot be displayed because it's outside your Simon SmartHome server or the page was not found.
       public static var message: String { return L10n.tr("Localizable", "alerts.navigation_error.message") }
       /// Navigation Error
       public static var title: String { return L10n.tr("Localizable", "alerts.navigation_error.title") }
@@ -448,7 +448,7 @@ public enum L10n {
       public static func actionParameterDisambiguationIntro(_ p1: Any, _ p2: Any) -> String {
         return L10n.tr("Localizable", "app_intents.perform_action.action_parameter_disambiguation_intro", String(describing: p1), String(describing: p2))
       }
-      /// Perform an action on a Home Assistant server
+      /// Perform an action on a Simon SmartHome server
       public static var description: String { return L10n.tr("Localizable", "app_intents.perform_action.description") }
       /// Failed: %@
       public static func responseFailure(_ p1: Any) -> String {
@@ -476,7 +476,7 @@ public enum L10n {
       }
     }
     public enum RenderTemplate {
-      /// Render a Home Assistant template. Only users with the admin role can perform this action.
+      /// Render a Simon SmartHome template. Only users with the admin role can perform this action.
       public static var description: String { return L10n.tr("Localizable", "app_intents.render_template.description") }
       /// Render template
       public static var title: String { return L10n.tr("Localizable", "app_intents.render_template.title") }
@@ -580,7 +580,7 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "app_intents.switch.title") }
     }
     public enum UpdateLocation {
-      /// Send a location update to Home Assistant
+      /// Send a location update to Simon SmartHome
       public static var description: String { return L10n.tr("Localizable", "app_intents.update_location.description") }
       /// Updated location on all servers
       public static var success: String { return L10n.tr("Localizable", "app_intents.update_location.success") }
@@ -592,7 +592,7 @@ public enum L10n {
       }
     }
     public enum UpdateSensors {
-      /// Send a sensor update to Home Assistant
+      /// Send a sensor update to Simon SmartHome
       public static var description: String { return L10n.tr("Localizable", "app_intents.update_sensors.description") }
       /// Updated sensors on all servers
       public static var success: String { return L10n.tr("Localizable", "app_intents.update_sensors.success") }
@@ -614,7 +614,7 @@ public enum L10n {
     }
     public enum Carplay {
       public enum PlaybackHelp {
-        /// If you encounter audio playback issues, open CarPlay settings in the Home Assistant Companion app, tap Advanced, open Assist, and change TTS Playback to Download and play.
+        /// If you encounter audio playback issues, open CarPlay settings in the Simon SmartHome app, tap Advanced, open Assist, and change TTS Playback to Download and play.
         public static var message: String { return L10n.tr("Localizable", "assist.carplay.playback_help.message") }
         /// Audio Playback Help
         public static var title: String { return L10n.tr("Localizable", "assist.carplay.playback_help.title") }
@@ -637,7 +637,7 @@ public enum L10n {
           public static var title: String { return L10n.tr("Localizable", "assist.carplay.playback_help.go_to_troubleshooting.title") }
         }
         public enum OpenApp {
-          /// Open CarPlay settings in the Home Assistant Companion app.
+          /// Open CarPlay settings in the Simon SmartHome app.
           public static var detail: String { return L10n.tr("Localizable", "assist.carplay.playback_help.open_app.detail") }
           /// Companion app
           public static var title: String { return L10n.tr("Localizable", "assist.carplay.playback_help.open_app.title") }
@@ -777,7 +777,7 @@ public enum L10n {
       }
     }
     public enum Empty {
-      /// No camera entities found in your Home Assistant setup
+      /// No camera entities found in your Simon SmartHome setup
       public static var message: String { return L10n.tr("Localizable", "camera_list.empty.message") }
       /// No Cameras
       public static var title: String { return L10n.tr("Localizable", "camera_list.empty.title") }
@@ -806,7 +806,7 @@ public enum L10n {
     public enum Errors {
       /// No stream available
       public static var noStreamAvailable: String { return L10n.tr("Localizable", "camera_player.errors.no_stream_available") }
-      /// Unable to connect to Home Assistant
+      /// Unable to connect to Simon SmartHome
       public static var unableToConnectToServer: String { return L10n.tr("Localizable", "camera_player.errors.unable_to_connect_to_server") }
       /// Unknown error
       public static var unknown: String { return L10n.tr("Localizable", "camera_player.errors.unknown") }
@@ -1108,11 +1108,11 @@ public enum L10n {
         /// Add item
         public static var title: String { return L10n.tr("Localizable", "carPlay.quick_access.add_item.title") }
         public enum AssistPrompt {
-          /// Assist prompts can only be created in the Home Assistant app on your iPhone.
+          /// Assist prompts can only be created in the Simon SmartHome app on your iPhone.
           public static var message: String { return L10n.tr("Localizable", "carPlay.quick_access.add_item.assist_prompt.message") }
         }
         public enum Confirmation {
-          /// For more customization, configure Quick Access in the Home Assistant app on your iPhone.
+          /// For more customization, configure Quick Access in the Simon SmartHome app on your iPhone.
           public static var footer: String { return L10n.tr("Localizable", "carPlay.quick_access.add_item.confirmation.footer") }
           /// Add without confirmation
           public static var noConfirmation: String { return L10n.tr("Localizable", "carPlay.quick_access.add_item.confirmation.no_confirmation") }
@@ -1342,7 +1342,7 @@ public enum L10n {
       public enum FailedConnect {
         /// Check your connection and try again. If you are not at home make sure you have configured remote access.
         public static var subtitle: String { return L10n.tr("Localizable", "connection.error.failed_connect.subtitle") }
-        /// We couldn't connect to Home Assistant
+        /// We couldn't connect to Simon SmartHome
         public static var title: String { return L10n.tr("Localizable", "connection.error.failed_connect.title") }
         /// The app is currently connecting to
         public static var url: String { return L10n.tr("Localizable", "connection.error.failed_connect.url") }
@@ -1351,16 +1351,16 @@ public enum L10n {
           public static var title: String { return L10n.tr("Localizable", "connection.error.failed_connect.cloud.title") }
         }
         public enum CloudInactive {
-          /// You have disabled Home Assistant Cloud use in the app, if you need it for remote access please open companion app settings and enable it.
+          /// You have disabled Simon SmartHome Cloud use in the app, if you need it for remote access please open companion app settings and enable it.
           public static var title: String { return L10n.tr("Localizable", "connection.error.failed_connect.cloud_inactive.title") }
         }
       }
     }
     public enum Permission {
       public enum InternalUrl {
-        /// To access Home Assistant locally in a secure way, you need to grant the location permission ('Always').
+        /// To access Simon SmartHome locally in a secure way, you need to grant the location permission ('Always').
         public static var body1: String { return L10n.tr("Localizable", "connection.permission.internal_url.body1") }
-        /// This permission allows Home Assistant to detect the wireless network that you're connected to and establish a local connection.
+        /// This permission allows Simon SmartHome to detect the wireless network that you're connected to and establish a local connection.
         public static var body2: String { return L10n.tr("Localizable", "connection.permission.internal_url.body2") }
         /// If you still want to use the local URL and don't want to provide location permission, you can tap the button below, but please, be aware of the security risks.
         public static var footer: String { return L10n.tr("Localizable", "connection.permission.internal_url.footer") }
@@ -1503,7 +1503,7 @@ public enum L10n {
   }
 
   public enum DeviceName {
-    /// This is used to identify your device in your Home Assistant.
+    /// This is used to identify your device in your Simon SmartHome.
     public static var subtitle: String { return L10n.tr("Localizable", "device_name.subtitle") }
     /// How would you like to name this device?
     public static var title: String { return L10n.tr("Localizable", "device_name.title") }
@@ -1706,7 +1706,7 @@ public enum L10n {
     public enum Category {
       /// App
       public static var app: String { return L10n.tr("Localizable", "gestures.category.app") }
-      /// Home Assistant
+      /// Simon SmartHome
       public static var homeAssistant: String { return L10n.tr("Localizable", "gestures.category.homeAssistant") }
       /// Other
       public static var other: String { return L10n.tr("Localizable", "gestures.category.other") }
@@ -1730,7 +1730,7 @@ public enum L10n {
       }
     }
     public enum Screen {
-      /// Gestures below will be applied whenever you are using Home Assistant main UI.
+      /// Gestures below will be applied whenever you are using Simon SmartHome main UI.
       public static var body: String { return L10n.tr("Localizable", "gestures.screen.body") }
       /// Gestures
       public static var title: String { return L10n.tr("Localizable", "gestures.screen.title") }
@@ -1828,13 +1828,13 @@ public enum L10n {
     public enum ApiError {
       /// Cant build API URL
       public static var cantBuildUrl: String { return L10n.tr("Localizable", "ha_api.api_error.cant_build_url") }
-      /// Received invalid response from Home Assistant
+      /// Received invalid response from Simon SmartHome
       public static var invalidResponse: String { return L10n.tr("Localizable", "ha_api.api_error.invalid_response") }
       /// HA API Manager is unavailable
       public static var managerNotAvailable: String { return L10n.tr("Localizable", "ha_api.api_error.manager_not_available") }
-      /// The mobile_app component is not loaded. Please add it to your configuration, restart Home Assistant, and try again.
+      /// The mobile_app component is not loaded. Please add it to your configuration, restart Simon SmartHome, and try again.
       public static var mobileAppComponentNotLoaded: String { return L10n.tr("Localizable", "ha_api.api_error.mobile_app_component_not_loaded") }
-      /// Your Home Assistant version (%@) is too old, you must upgrade to at least version %@ to use the app.
+      /// Your Simon SmartHome version (%@) is too old, you must upgrade to at least version %@ to use the app.
       public static func mustUpgradeHomeAssistant(_ p1: Any, _ p2: Any) -> String {
         return L10n.tr("Localizable", "ha_api.api_error.must_upgrade_home_assistant", String(describing: p1), String(describing: p2))
       }
@@ -2303,7 +2303,7 @@ public enum L10n {
       }
     }
     public enum Sensors {
-      /// Report kiosk mode, brightness, and volume to Home Assistant.
+      /// Report kiosk mode, brightness, and volume to Simon SmartHome.
       public static var body: String { return L10n.tr("Localizable", "kiosk.sensors.body") }
       /// These sensors also appear in the app's sensor settings. Enabling or disabling them here keeps both places in sync.
       public static var footer: String { return L10n.tr("Localizable", "kiosk.sensors.footer") }
@@ -2313,18 +2313,18 @@ public enum L10n {
   }
 
   public enum LegacyActions {
-    /// Legacy iOS Actions are not the recommended way to interact with Home Assistant anymore, please use Scripts, Scenes and Automations directly in your Widgets, Apple Watch and CarPlay.
+    /// Legacy iOS Actions are not the recommended way to interact with Simon SmartHome anymore, please use Scripts, Scenes and Automations directly in your Widgets, Apple Watch and CarPlay.
     public static var disclaimer: String { return L10n.tr("Localizable", "legacy_actions.disclaimer") }
   }
 
   public enum LiveActivity {
-    /// Home Assistant
+    /// Simon SmartHome
     public static var defaultTitle: String { return L10n.tr("Localizable", "live_activity.default_title") }
     /// Documentation
     public static var documentation: String { return L10n.tr("Localizable", "live_activity.documentation") }
     /// No active Live Activities
     public static var emptyState: String { return L10n.tr("Localizable", "live_activity.empty_state") }
-    /// Real-time Home Assistant updates on your Lock Screen and Dynamic Island.
+    /// Real-time Simon SmartHome updates on your Lock Screen and Dynamic Island.
     public static var subtitle: String { return L10n.tr("Localizable", "live_activity.subtitle") }
     /// Live Activities
     public static var title: String { return L10n.tr("Localizable", "live_activity.title") }
@@ -2343,7 +2343,7 @@ public enum L10n {
       }
     }
     public enum FrequentUpdates {
-      /// Allows Home Assistant to update Live Activities up to once per second. Enable in Settings u203A %@ u203A Live Activities.
+      /// Allows Simon SmartHome to update Live Activities up to once per second. Enable in Settings u203A %@ u203A Live Activities.
       public static func footer(_ p1: Any) -> String {
         return L10n.tr("Localizable", "live_activity.frequent_updates.footer", String(describing: p1))
       }
@@ -2519,11 +2519,11 @@ public enum L10n {
       public static var openSettings: String { return L10n.tr("Localizable", "live_activity.status.open_settings") }
     }
     public enum Sync {
-      /// Sync with Home Assistant
+      /// Sync with Simon SmartHome
       public static var button: String { return L10n.tr("Localizable", "live_activity.sync.button") }
       /// Synced
       public static var done: String { return L10n.tr("Localizable", "live_activity.sync.done") }
-      /// Reports running Live Activities to Home Assistant and releases tokens for any that have ended. Runs automatically when the app opens.
+      /// Reports running Live Activities to Simon SmartHome and releases tokens for any that have ended. Runs automatically when the app opens.
       public static var footer: String { return L10n.tr("Localizable", "live_activity.sync.footer") }
     }
   }
@@ -2711,7 +2711,7 @@ public enum L10n {
           /// iOS Actions
           public static var title: String { return L10n.tr("Localizable", "magic_item.item_type.action.list.title") }
           public enum Warning {
-            /// We will stop supporting iOS Actions in the future, please consider using Home Assistant scripts or scenes instead.
+            /// We will stop supporting iOS Actions in the future, please consider using Simon SmartHome scripts or scenes instead.
             public static var title: String { return L10n.tr("Localizable", "magic_item.item_type.action.list.warning.title") }
           }
         }
@@ -2904,7 +2904,7 @@ public enum L10n {
     public enum List {
       /// NFC tags written by the app will show a notification when you bring your device near them. Activating the notification will launch the app and fire an event.
       /// 
-      /// Tags will work on any device with Home Assistant installed which has hardware support to read them.
+      /// Tags will work on any device with Simon SmartHome installed which has hardware support to read them.
       public static var description: String { return L10n.tr("Localizable", "nfc.list.description") }
       /// Learn More
       public static var learnMore: String { return L10n.tr("Localizable", "nfc.list.learn_more") }
@@ -2923,7 +2923,7 @@ public enum L10n {
       public enum Error {
         /// Failed to read tag
         public static var genericFailure: String { return L10n.tr("Localizable", "nfc.read.error.generic_failure") }
-        /// NFC tag is not a Home Assistant tag
+        /// NFC tag is not a Simon SmartHome tag
         public static var notHomeAssistant: String { return L10n.tr("Localizable", "nfc.read.error.not_home_assistant") }
         /// NFC tag is invalid
         public static var tagInvalid: String { return L10n.tr("Localizable", "nfc.read.error.tag_invalid") }
@@ -2936,7 +2936,7 @@ public enum L10n {
       public static var allowOnce: String { return L10n.tr("Localizable", "nfc.tag_approval.allow_once") }
       /// Copy tag
       public static var copyTag: String { return L10n.tr("Localizable", "nfc.tag_approval.copy_tag") }
-      /// Send this tag to Home Assistant to trigger linked automations.
+      /// Send this tag to Simon SmartHome to trigger linked automations.
       public static var description: String { return L10n.tr("Localizable", "nfc.tag_approval.description") }
       /// Allow tag?
       public static var title: String { return L10n.tr("Localizable", "nfc.tag_approval.title") }
@@ -3008,7 +3008,7 @@ public enum L10n {
       }
       public enum Rows {
         public enum AuthenticationRequired {
-          /// When the user selects an action with this option, the system prompts the user to unlock the device. After unlocking, Home Assistant will be notified of the selected action.
+          /// When the user selects an action with this option, the system prompts the user to unlock the device. After unlocking, Simon SmartHome will be notified of the selected action.
           public static var footer: String { return L10n.tr("Localizable", "notifications_configurator.action.rows.authentication_required.footer") }
           /// Authentication Required
           public static var title: String { return L10n.tr("Localizable", "notifications_configurator.action.rows.authentication_required.title") }
@@ -3189,9 +3189,9 @@ public enum L10n {
     public enum Invitation {
       /// Accept
       public static var acceptButton: String { return L10n.tr("Localizable", "onboarding.invitation.accept_button") }
-      /// Home Assistant address
+      /// Simon SmartHome address
       public static var addressTitle: String { return L10n.tr("Localizable", "onboarding.invitation.address_title") }
-      /// Home Assistant is open source home automation that puts local control and privacy first.
+      /// Simon SmartHome is open source home automation that puts local control and privacy first.
       public static var description: String { return L10n.tr("Localizable", "onboarding.invitation.description") }
       /// Reject
       public static var rejectButton: String { return L10n.tr("Localizable", "onboarding.invitation.reject_button") }
@@ -3199,15 +3199,15 @@ public enum L10n {
       public static var screenTitle: String { return L10n.tr("Localizable", "onboarding.invitation.screen_title") }
       /// Only accept this invite if you trust the person who shared it. Connecting to an unknown server could give it access to data you enter or is sent by the app, such as your location and device information.
       public static var securityWarning: String { return L10n.tr("Localizable", "onboarding.invitation.security_warning") }
-      /// Home Assistant Invite
+      /// Simon SmartHome Invite
       public static var title: String { return L10n.tr("Localizable", "onboarding.invitation.title") }
     }
     public enum LocalAccess {
-      /// If this app knows when you’re away from home, it can choose a more secure way to connect to your Home Assistant system. This requires location services to be enabled.
+      /// If this app knows when you’re away from home, it can choose a more secure way to connect to your Simon SmartHome system. This requires location services to be enabled.
       public static var description: String { return L10n.tr("Localizable", "onboarding.local_access.description") }
       /// Next
       public static var nextButton: String { return L10n.tr("Localizable", "onboarding.local_access.next_button") }
-      /// This data will never be shared with the Home Assistant project or third parties.
+      /// This data will never be shared with the Simon SmartHome project or third parties.
       public static var privacyDisclaimer: String { return L10n.tr("Localizable", "onboarding.local_access.privacy_disclaimer") }
       /// Let us help secure your remote connection
       public static var title: String { return L10n.tr("Localizable", "onboarding.local_access.title") }
@@ -3221,7 +3221,7 @@ public enum L10n {
       }
     }
     public enum LocalOnlyDisclaimer {
-      /// Your Home Assistant is only accessible on your home network. To control your smart home from anywhere, you can set up remote access later in your settings.
+      /// Your Simon SmartHome is only accessible on your home network. To control your smart home from anywhere, you can set up remote access later in your settings.
       public static var primaryDescription: String { return L10n.tr("Localizable", "onboarding.local_only_disclaimer.primary_description") }
       /// For now, you're securely connected to your local network.
       public static var secondaryDescription: String { return L10n.tr("Localizable", "onboarding.local_only_disclaimer.secondary_description") }
@@ -3234,9 +3234,9 @@ public enum L10n {
       }
     }
     public enum LocationAccess {
-      /// Location sharing enables powerful automations, such as turning off the heating when you leave home. This option shares the device’s location only with your Home Assistant system.
+      /// Location sharing enables powerful automations, such as turning off the heating when you leave home. This option shares the device’s location only with your Simon SmartHome system.
       public static var primaryDescription: String { return L10n.tr("Localizable", "onboarding.location_access.primary_description") }
-      /// This data stays in your home and is never sent to third parties. It also helps strengthen the security of your connection to Home Assistant.
+      /// This data stays in your home and is never sent to third parties. It also helps strengthen the security of your connection to Simon SmartHome.
       public static var secondaryDescription: String { return L10n.tr("Localizable", "onboarding.location_access.secondary_description") }
       /// Use this device's location for automations
       public static var title: String { return L10n.tr("Localizable", "onboarding.location_access.title") }
@@ -3252,7 +3252,7 @@ public enum L10n {
     public enum ManualSetup {
       /// Connect
       public static var connect: String { return L10n.tr("Localizable", "onboarding.manual_setup.connect") }
-      /// The URL of your Home Assistant server. Make sure it includes the protocol and port.
+      /// The URL of your Simon SmartHome server. Make sure it includes the protocol and port.
       public static var description: String { return L10n.tr("Localizable", "onboarding.manual_setup.description") }
       /// Enter URL
       public static var title: String { return L10n.tr("Localizable", "onboarding.manual_setup.title") }
@@ -3283,12 +3283,12 @@ public enum L10n {
       public enum TextField {
         /// e.g. http://homeassistant.local:8123
         public static var placeholder: String { return L10n.tr("Localizable", "onboarding.manual_setup.text_field.placeholder") }
-        /// Your Home Assistant URL
+        /// Your Simon SmartHome URL
         public static var title: String { return L10n.tr("Localizable", "onboarding.manual_setup.text_field.title") }
       }
     }
     public enum ManualUrlEntry {
-      /// What is your Home Assistant address?
+      /// What is your Simon SmartHome address?
       public static var title: String { return L10n.tr("Localizable", "onboarding.manual_url_entry.title") }
       public enum PrimaryAction {
         /// Connect
@@ -3296,7 +3296,7 @@ public enum L10n {
       }
     }
     public enum NetworkInput {
-      /// For the best experience, Home Assistant needs to know when you’re connected to your home network.
+      /// For the best experience, Simon SmartHome needs to know when you’re connected to your home network.
       public static var primaryDescription: String { return L10n.tr("Localizable", "onboarding.network_input.primary_description") }
       /// What is your home network?
       public static var title: String { return L10n.tr("Localizable", "onboarding.network_input.title") }
@@ -3327,7 +3327,7 @@ public enum L10n {
         }
         public enum Skip {
           public enum Alert {
-            /// You haven't set a home network. You can set it up later in the app settings, until that we will only use your remote connection (if it exists) to access Home Assistant.
+            /// You haven't set a home network. You can set it up later in the app settings, until that we will only use your remote connection (if it exists) to access Simon SmartHome.
             public static var body: String { return L10n.tr("Localizable", "onboarding.network_input.no_network.skip.alert.body") }
             /// Are you sure?
             public static var title: String { return L10n.tr("Localizable", "onboarding.network_input.no_network.skip.alert.title") }
@@ -3353,15 +3353,15 @@ public enum L10n {
     }
     public enum Permission {
       public enum Location {
-        /// To identify if you are at home and connect locally to Home Assistant, Apple requires that we ask for your location permission.
+        /// To identify if you are at home and connect locally to Simon SmartHome, Apple requires that we ask for your location permission.
         public static var description: String { return L10n.tr("Localizable", "onboarding.permission.location.description") }
         public enum Deny {
           public enum Alert {
-            /// If you are sure, please continue and tap 'Deny' on the next popup as well, in case you don't have a remote connection configured, the App will use your local connection configuration to access Home Assistant.
+            /// If you are sure, please continue and tap 'Deny' on the next popup as well, in case you don't have a remote connection configured, the App will use your local connection configuration to access Simon SmartHome.
             public static var body: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.body") }
             /// Information
             public static var header: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.header") }
-            /// Without location permission future versions of the App may deny access to your local Home Assistant server due to privacy concerns. If you are sure, please continue and tap 'Deny' on the next popup as well. By doing that we recommend you use your internal URL as external, since it is the only URL the app will try to access.
+            /// Without location permission future versions of the App may deny access to your local Simon SmartHome server due to privacy concerns. If you are sure, please continue and tap 'Deny' on the next popup as well. By doing that we recommend you use your internal URL as external, since it is the only URL the app will try to access.
             public static var message: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.message") }
             /// Are you sure?
             public static var title: String { return L10n.tr("Localizable", "onboarding.permission.location.deny.alert.title") }
@@ -3377,7 +3377,7 @@ public enum L10n {
       /// You can change this permission later in Settings
       public static var changeLaterNote: String { return L10n.tr("Localizable", "onboarding.permissions.change_later_note") }
       public enum Focus {
-        /// Allow whether you are in focus mode to be sent to Home Assistant
+        /// Allow whether you are in focus mode to be sent to Simon SmartHome
         public static var description: String { return L10n.tr("Localizable", "onboarding.permissions.focus.description") }
         /// Allow focus permission to create sensors for your focus status, also known as do-not-disturb.
         public static var grantDescription: String { return L10n.tr("Localizable", "onboarding.permissions.focus.grant_description") }
@@ -3407,7 +3407,7 @@ public enum L10n {
         }
       }
       public enum Motion {
-        /// Allow motion activity and pedometer data to be sent to Home Assistant
+        /// Allow motion activity and pedometer data to be sent to Simon SmartHome
         public static var description: String { return L10n.tr("Localizable", "onboarding.permissions.motion.description") }
         /// Allow motion permission to create sensors for motion and pedometer data.
         public static var grantDescription: String { return L10n.tr("Localizable", "onboarding.permissions.motion.grant_description") }
@@ -3423,7 +3423,7 @@ public enum L10n {
         }
       }
       public enum Notification {
-        /// Allow push notifications to be sent from your Home Assistant
+        /// Allow push notifications to be sent from your Simon SmartHome
         public static var description: String { return L10n.tr("Localizable", "onboarding.permissions.notification.description") }
         /// Allow notification permission to create a notify service for your device.
         public static var grantDescription: String { return L10n.tr("Localizable", "onboarding.permissions.notification.grant_description") }
@@ -3462,7 +3462,7 @@ public enum L10n {
     public enum ServerImport {
       /// Hang tight, we’re rounding up your servers.
       public static var message: String { return L10n.tr("Localizable", "onboarding.server_import.message") }
-      /// Importing Home Assistant
+      /// Importing Simon SmartHome
       public static var title: String { return L10n.tr("Localizable", "onboarding.server_import.title") }
       public enum Reauthenticate {
         /// Continue
@@ -3475,7 +3475,7 @@ public enum L10n {
         public static func message(_ p1: Any) -> String {
           return L10n.tr("Localizable", "onboarding.server_import.reauthenticate.message", String(describing: p1))
         }
-        /// Reconnect Home Assistant
+        /// Reconnect Simon SmartHome
         public static var title: String { return L10n.tr("Localizable", "onboarding.server_import.reauthenticate.title") }
         /// Choose a connection
         public static var urlPickerTitle: String { return L10n.tr("Localizable", "onboarding.server_import.reauthenticate.url_picker_title") }
@@ -3496,38 +3496,38 @@ public enum L10n {
         /// Looking for servers nearby...
         public static var message: String { return L10n.tr("Localizable", "onboarding.servers.search.message") }
         public enum Loader {
-          /// Check that your Home Assistant is powered on and you're connected to the same network. You can enter the address manually if you know it.
+          /// Check that your Simon SmartHome is powered on and you're connected to the same network. You can enter the address manually if you know it.
           public static var text: String { return L10n.tr("Localizable", "onboarding.servers.search.loader.text") }
         }
       }
     }
     public enum Welcome {
-      /// Allows you to access your Home Assistant installation on the go. It runs locally in your home via a device like the Home Assistant Green or Raspberry Pi.
+      /// Allows you to access your Simon SmartHome installation on the go. It runs locally in your home via a device like the Simon SmartHome Green or Raspberry Pi.
       public static var body: String { return L10n.tr("Localizable", "onboarding.welcome.body") }
-      /// This app connects to your Home Assistant server and allows integrating data about you and your phone.
+      /// This app connects to your Simon SmartHome server and allows integrating data about you and your phone.
       /// 
-      /// Home Assistant is free and open source home automation software with a focus on local control and privacy.
+      /// Simon SmartHome is free and open source home automation software with a focus on local control and privacy.
       public static var description: String { return L10n.tr("Localizable", "onboarding.welcome.description") }
-      /// Home Assistant Companion App
+      /// Simon SmartHome App
       public static var header: String { return L10n.tr("Localizable", "onboarding.welcome.header") }
       /// Learn more
       public static var learnMore: String { return L10n.tr("Localizable", "onboarding.welcome.learn_more") }
-      /// Connect to my Home Assistant
+      /// Connect to my Simon SmartHome
       public static var primaryButton: String { return L10n.tr("Localizable", "onboarding.welcome.primary_button") }
       /// Getting started
       public static var secondaryButton: String { return L10n.tr("Localizable", "onboarding.welcome.secondary_button") }
-      /// Welcome to Home Assistant %@!
+      /// Welcome to Simon SmartHome %@!
       public static func title(_ p1: Any) -> String {
         return L10n.tr("Localizable", "onboarding.welcome.title", String(describing: p1))
       }
       public enum Logo {
-        /// Home Assistant logo
+        /// Simon SmartHome logo
         public static var accessibilityLabel: String { return L10n.tr("Localizable", "onboarding.welcome.logo.accessibility_label") }
       }
       public enum Updated {
-        /// Access your Home Assistant server on the go. 
+        /// Access your Simon SmartHome server on the go. 
         /// 
-        /// Home Assistant is open source, advocates for privacy and runs locally in your home.
+        /// Simon SmartHome is open source, advocates for privacy and runs locally in your home.
         public static var body: String { return L10n.tr("Localizable", "onboarding.welcome.updated.body") }
         /// Learn more
         public static var secondaryButton: String { return L10n.tr("Localizable", "onboarding.welcome.updated.secondary_button") }
@@ -3550,7 +3550,7 @@ public enum L10n {
       public enum Bluetooth {
         /// Skip
         public static var secondaryButton: String { return L10n.tr("Localizable", "permission.screen.bluetooth.secondary_button") }
-        /// The Home Assistant app can find devices using Bluetooth of this device. Allow Bluetooth access for the Home Assistant app.
+        /// The Simon SmartHome app can find devices using Bluetooth of this device. Allow Bluetooth access for the Simon SmartHome app.
         public static var subtitle: String { return L10n.tr("Localizable", "permission.screen.bluetooth.subtitle") }
         /// Search devices
         public static var title: String { return L10n.tr("Localizable", "permission.screen.bluetooth.title") }
@@ -3638,7 +3638,7 @@ public enum L10n {
       public static var details: String { return L10n.tr("Localizable", "settings.connection_section.details") }
       /// Connection
       public static var header: String { return L10n.tr("Localizable", "settings.connection_section.header") }
-      /// Directly connect to the Home Assistant server for push notifications when on internal SSIDs.
+      /// Directly connect to the Simon SmartHome server for push notifications when on internal SSIDs.
       public static var localPushDescription: String { return L10n.tr("Localizable", "settings.connection_section.local_push_description") }
       /// Logged in as
       public static var loggedInAs: String { return L10n.tr("Localizable", "settings.connection_section.logged_in_as") }
@@ -3671,7 +3671,7 @@ public enum L10n {
         public static func expiresAt(_ p1: Any) -> String {
           return L10n.tr("Localizable", "settings.connection_section.client_certificate.expires_at", String(describing: p1))
         }
-        /// Import a PKCS#12 (.p12) certificate for mutual TLS authentication. Required when your Home Assistant server requires client certificates.
+        /// Import a PKCS#12 (.p12) certificate for mutual TLS authentication. Required when your Simon SmartHome server requires client certificates.
         public static var footer: String { return L10n.tr("Localizable", "settings.connection_section.client_certificate.footer") }
         /// Client Certificate
         public static var header: String { return L10n.tr("Localizable", "settings.connection_section.client_certificate.header") }
@@ -3995,7 +3995,7 @@ public enum L10n {
         public static var title: String { return L10n.tr("Localizable", "settings.debugging.shake_disclaimer_optional.title") }
       }
       public enum Thread {
-        /// Check what Thread credentials are inside Apple Keychain, you can also import in Home Assistant or delete from Keychain.
+        /// Check what Thread credentials are inside Apple Keychain, you can also import in Simon SmartHome or delete from Keychain.
         public static var footer: String { return L10n.tr("Localizable", "settings.debugging.thread.footer") }
       }
     }
@@ -4141,7 +4141,7 @@ public enum L10n {
         public static var header: String { return L10n.tr("Localizable", "settings.mac_toolbar.entities_section.header") }
       }
       public enum HowToAdd {
-        /// To add an entity, open its more info dialog in Home Assistant, select the "Add to" button, then choose "Mac Toolbar".
+        /// To add an entity, open its more info dialog in Simon SmartHome, select the "Add to" button, then choose "Mac Toolbar".
         public static var body: String { return L10n.tr("Localizable", "settings.mac_toolbar.how_to_add.body") }
         /// Adding entities
         public static var header: String { return L10n.tr("Localizable", "settings.mac_toolbar.how_to_add.header") }
@@ -4163,7 +4163,7 @@ public enum L10n {
     }
     public enum ResetSection {
       public enum ResetAlert {
-        /// Your settings will be reset and this device will be unregistered from push notifications as well as removed from your Home Assistant configuration.
+        /// Your settings will be reset and this device will be unregistered from push notifications as well as removed from your Simon SmartHome configuration.
         public static var message: String { return L10n.tr("Localizable", "settings.reset_section.reset_alert.message") }
         /// Reset
         public static var title: String { return L10n.tr("Localizable", "settings.reset_section.reset_alert.title") }
@@ -4189,7 +4189,7 @@ public enum L10n {
       /// Status
       public static var header: String { return L10n.tr("Localizable", "settings.status_section.header") }
       public enum LocationNameRow {
-        /// My Home Assistant
+        /// My Simon SmartHome
         public static var placeholder: String { return L10n.tr("Localizable", "settings.status_section.location_name_row.placeholder") }
         /// Name
         public static var title: String { return L10n.tr("Localizable", "settings.status_section.location_name_row.title") }
@@ -4404,7 +4404,7 @@ public enum L10n {
         public static var title: String { return L10n.tr("Localizable", "settings_details.general.device_name.title") }
       }
       public enum EdgeToEdge {
-        /// Display Home Assistant UI from edge to edge on devices that support it. This is an experimental feature which can be removed at any time and also may cause layout issues.
+        /// Display Simon SmartHome UI from edge to edge on devices that support it. This is an experimental feature which can be removed at any time and also may cause layout issues.
         public static var footer: String { return L10n.tr("Localizable", "settings_details.general.edge_to_edge.footer") }
         /// Edge to edge display
         public static var title: String { return L10n.tr("Localizable", "settings_details.general.edge_to_edge.title") }
@@ -4663,9 +4663,9 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "settings_details.mac_native_features.title") }
     }
     public enum MacOpenInBrowser {
-      /// Opens Home Assistant in your default browser instead of the in-app web view, while keeping native features such as widgets working.
+      /// Opens Simon SmartHome in your default browser instead of the in-app web view, while keeping native features such as widgets working.
       public static var footer: String { return L10n.tr("Localizable", "settings_details.mac_open_in_browser.footer") }
-      /// Open Home Assistant UI in browser
+      /// Open Simon SmartHome UI in browser
       public static var title: String { return L10n.tr("Localizable", "settings_details.mac_open_in_browser.title") }
     }
     public enum Notifications {
@@ -4928,7 +4928,7 @@ public enum L10n {
         public static var title: String { return L10n.tr("Localizable", "settings_details.privacy.alerts.title") }
       }
       public enum Analytics {
-        /// Allows collection of basic information about your device and interactions with the app. No user identifiable data is shared, including your Home Assistant URLs and tokens. You must restart the app for changes to this setting to take effect.
+        /// Allows collection of basic information about your device and interactions with the app. No user identifiable data is shared, including your Simon SmartHome URLs and tokens. You must restart the app for changes to this setting to take effect.
         public static var genericDescription: String { return L10n.tr("Localizable", "settings_details.privacy.analytics.generic_description") }
         /// Analytics
         public static var genericTitle: String { return L10n.tr("Localizable", "settings_details.privacy.analytics.generic_title") }
@@ -4979,7 +4979,7 @@ public enum L10n {
   }
 
   public enum SettingsSensors {
-    /// Decide which of your device sensors you want to share with Home Assistant.
+    /// Decide which of your device sensors you want to share with Simon SmartHome.
     public static var body: String { return L10n.tr("Localizable", "settings_sensors.body") }
     /// Disabled
     public static var disabledStateReplacement: String { return L10n.tr("Localizable", "settings_sensors.disabled_state_replacement") }
@@ -5065,7 +5065,7 @@ public enum L10n {
       public static var deleteAll: String { return L10n.tr("Localizable", "tags.allowed.delete_all") }
       /// No allowed tags
       public static var empty: String { return L10n.tr("Localizable", "tags.allowed.empty") }
-      /// Allowed tags can be sent to Home Assistant without asking for approval each time. Swipe left on a tag to delete it.
+      /// Allowed tags can be sent to Simon SmartHome without asking for approval each time. Swipe left on a tag to delete it.
       public static var footer: String { return L10n.tr("Localizable", "tags.allowed.footer") }
       /// Allowed tags
       public static var title: String { return L10n.tr("Localizable", "tags.allowed.title") }
@@ -5153,7 +5153,7 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "thread.transter_to_apple.title") }
     }
     public enum TransterToHomeassistant {
-      /// Transfer to Home Assistant
+      /// Transfer to Simon SmartHome
       public static var title: String { return L10n.tr("Localizable", "thread.transter_to_homeassistant.title") }
     }
   }
@@ -6070,7 +6070,7 @@ public enum L10n {
       public static func lastUpdated(_ p1: Any) -> String {
         return L10n.tr("Localizable", "watch.settings.last_updated", String(describing: p1))
       }
-      /// No servers synced yet. Open Home Assistant on your paired iPhone, then refresh from the Home screen.
+      /// No servers synced yet. Open Simon SmartHome on your paired iPhone, then refresh from the Home screen.
       public static var noServers: String { return L10n.tr("Localizable", "watch.settings.no_servers") }
       /// Refresh
       public static var refresh: String { return L10n.tr("Localizable", "watch.settings.refresh") }
@@ -6079,7 +6079,7 @@ public enum L10n {
       public enum ClientCertificate {
         /// Available on this Watch
         public static var availableOnWatch: String { return L10n.tr("Localizable", "watch.settings.client_certificate.available_on_watch") }
-        /// Open Home Assistant on your iPhone to import the certificate, then refresh here.
+        /// Open Simon SmartHome on your iPhone to import the certificate, then refresh here.
         public static var importInstructions: String { return L10n.tr("Localizable", "watch.settings.client_certificate.import_instructions") }
         /// Not configured
         public static var `none`: String { return L10n.tr("Localizable", "watch.settings.client_certificate.none") }
@@ -6101,7 +6101,7 @@ public enum L10n {
       public enum PerformAction {
         /// Apple Watch
         public static var appleWatch: String { return L10n.tr("Localizable", "watch.settings.perform_action.apple_watch") }
-        /// Where actions run. Auto uses your iPhone when it's nearby, otherwise the Apple Watch connects directly to Home Assistant.
+        /// Where actions run. Auto uses your iPhone when it's nearby, otherwise the Apple Watch connects directly to Simon SmartHome.
         public static var footer: String { return L10n.tr("Localizable", "watch.settings.perform_action.footer") }
         /// iPhone
         public static var iphone: String { return L10n.tr("Localizable", "watch.settings.perform_action.iphone") }
@@ -6143,7 +6143,7 @@ public enum L10n {
       }
     }
     public enum EmptyState {
-      /// Please check your connection or try again later. If Home Assistant is restarting it will reconnect after it is back online.
+      /// Please check your connection or try again later. If Simon SmartHome is restarting it will reconnect after it is back online.
       public static var body: String { return L10n.tr("Localizable", "web_view.empty_state.body") }
       /// Open App settings
       public static var openSettingsButton: String { return L10n.tr("Localizable", "web_view.empty_state.open_settings_button") }
@@ -6159,7 +6159,7 @@ public enum L10n {
       /// 
       ///  ➡️  Please open the App settings and update your security choices or URLs.
       public static var body: String { return L10n.tr("Localizable", "web_view.no_url_available.body") }
-      /// We can't connect to Home Assistant
+      /// We can't connect to Simon SmartHome
       public static var title: String { return L10n.tr("Localizable", "web_view.no_url_available.title") }
       public enum PrimaryButton {
         /// Open App settings
@@ -6224,7 +6224,7 @@ public enum L10n {
       }
     }
     public enum Actions {
-      /// Perform Home Assistant actions.
+      /// Perform Simon SmartHome actions.
       public static var description: String { return L10n.tr("Localizable", "widgets.actions.description") }
       /// No Actions Configured
       public static var notConfigured: String { return L10n.tr("Localizable", "widgets.actions.not_configured") }
@@ -6265,13 +6265,13 @@ public enum L10n {
       /// Common Controls
       public static var title: String { return L10n.tr("Localizable", "widgets.commonly_used_entities.title") }
       public enum Empty {
-        /// No commonly used entities found. Use Home Assistant to build your usage history.
+        /// No commonly used entities found. Use Simon SmartHome to build your usage history.
         public static var description: String { return L10n.tr("Localizable", "widgets.commonly_used_entities.empty.description") }
       }
     }
     public enum Controls {
       public enum Assist {
-        /// Open Assist in Home Assistant app
+        /// Open Assist in Simon SmartHome app
         public static var description: String { return L10n.tr("Localizable", "widgets.controls.assist.description") }
         /// Assist
         public static var title: String { return L10n.tr("Localizable", "widgets.controls.assist.title") }
@@ -6519,9 +6519,9 @@ public enum L10n {
         public static var footer: String { return L10n.tr("Localizable", "widgets.custom.require_confirmation.footer") }
       }
       public enum ServerUnreachable {
-        /// Home Assistant could not be reached, please check your app server settings and connection security level.
+        /// Simon SmartHome could not be reached, please check your app server settings and connection security level.
         public static var body: String { return L10n.tr("Localizable", "widgets.custom.server_unreachable.body") }
-        /// Home Assistant could not be reached
+        /// Simon SmartHome could not be reached
         public static var title: String { return L10n.tr("Localizable", "widgets.custom.server_unreachable.title") }
       }
       public enum ShowLastUpdateTime {
@@ -6546,9 +6546,9 @@ public enum L10n {
       }
     }
     public enum Details {
-      /// Display states using from Home Assistant in text
+      /// Display states using from Simon SmartHome in text
       public static var description: String { return L10n.tr("Localizable", "widgets.details.description") }
-      /// Display states using from Home Assistant in text. ATTENTION: User needs to be admin for templating access
+      /// Display states using from Simon SmartHome in text. ATTENTION: User needs to be admin for templating access
       public static var descriptionWithWarning: String { return L10n.tr("Localizable", "widgets.details.description_with_warning") }
       /// Details
       public static var title: String { return L10n.tr("Localizable", "widgets.details.title") }
@@ -6574,9 +6574,9 @@ public enum L10n {
       public static var placeholder: String { return L10n.tr("Localizable", "widgets.entity_state.placeholder") }
     }
     public enum Gauge {
-      /// Display numeric states from Home Assistant in a gauge
+      /// Display numeric states from Simon SmartHome in a gauge
       public static var description: String { return L10n.tr("Localizable", "widgets.gauge.description") }
-      /// Display numeric states from Home Assistant in a gauge. ATTENTION: User needs to be admin for templating access
+      /// Display numeric states from Simon SmartHome in a gauge. ATTENTION: User needs to be admin for templating access
       public static var descriptionWithWarning: String { return L10n.tr("Localizable", "widgets.gauge.description_with_warning") }
       /// Gauge
       public static var title: String { return L10n.tr("Localizable", "widgets.gauge.title") }
@@ -6616,7 +6616,7 @@ public enum L10n {
       public static var title: String { return L10n.tr("Localizable", "widgets.open_entity.title") }
     }
     public enum OpenPage {
-      /// Open a frontend page in Home Assistant.
+      /// Open a frontend page in Simon SmartHome.
       public static var description: String { return L10n.tr("Localizable", "widgets.open_page.description") }
       /// No Pages Available
       public static var notConfigured: String { return L10n.tr("Localizable", "widgets.open_page.not_configured") }

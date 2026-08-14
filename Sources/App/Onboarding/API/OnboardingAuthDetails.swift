@@ -18,13 +18,13 @@ class OnboardingAuthDetails: Equatable {
 
         // swiftlint:disable prohibit_environment_assignment
         if Current.appConfiguration == .debug {
-            clientID = "https://home-assistant.io/iOS/dev-auth"
-            redirectURI = "homeassistant-dev://auth-callback"
-            scheme = "homeassistant-dev"
+            clientID = "https://woowtech.github.io/Woow_simon_ha_app/android"
+            redirectURI = "simonhome://auth-callback"
+            scheme = "simonhome"
         } else {
-            clientID = "https://home-assistant.io/iOS"
-            redirectURI = "homeassistant://auth-callback"
-            scheme = "homeassistant"
+            clientID = "https://woowtech.github.io/Woow_simon_ha_app/android"
+            redirectURI = "simonhome://auth-callback"
+            scheme = "simonhome"
         }
         // swiftlint:enable prohibit_environment_assignment
 

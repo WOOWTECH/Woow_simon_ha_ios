@@ -40,7 +40,7 @@ class IncomingURLHandler {
         // They are not deep-link actions, so route them to the my-link handler instead of treating the
         // host as an `IncomingURLAction` (which would otherwise show a "not a valid route" error).
         // Restrict to web schemes since `showMy(for:)` presents an `SFSafariViewController`, which only
-        // supports http/https; this also prevents a crafted `homeassistant://my.home-assistant.io/...`
+        // supports http/https; this also prevents a crafted `simonhome://my.home-assistant.io/...`
         // from reaching Safari.
         if ["http", "https"].contains(url.scheme?.lowercased()), host.lowercased() == "my.home-assistant.io" {
             return showMy(for: url)
@@ -99,7 +99,7 @@ class IncomingURLHandler {
                         view.modalPresentationStyle = .overFullScreen
                         webViewController.present(view, animated: true)
                     }
-            case .navigate: // homeassistant://navigate/lovelace/dashboard
+            case .navigate: // simonhome://navigate/lovelace/dashboard
                 guard var components = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
                     return false
                 }
@@ -221,7 +221,7 @@ class IncomingURLHandler {
                         webViewController.presentOverlayController(controller: controller, animated: true)
                     }
             case .invite:
-                // homeassistant://invite#url=http%3A%2F%2Fhomeassistant.local%3A8123
+                // simonhome://invite#url=http%3A%2F%2Fhomeassistant.local%3A8123
                 Current.Log.verbose("Received Home Assistant invitation URL: \(url)")
                 guard let fragment = url.fragment else {
                     Current.Log.error("Home Assistant invitation does not contain a fragment (e.g. #url=...)")
@@ -805,7 +805,7 @@ extension IncomingURLHandler {
     }
 
     private func fireEventURLHandler(_ url: URL, _ serviceData: [String: String]) {
-        // homeassistant://fire_event/custom_event?entity_id=device_tracker.entity
+        // simonhome://fire_event/custom_event?entity_id=device_tracker.entity
 
         firstly { () -> Promise<Void> in
             if let api = Current.apis.first {
@@ -833,7 +833,7 @@ extension IncomingURLHandler {
         _ callServiceTarget: (fullServiceName: String, domain: String, service: String),
         _ serviceData: [String: String]
     ) {
-        // homeassistant://call_service/device_tracker.see?entity_id=device_tracker.entity
+        // simonhome://call_service/device_tracker.see?entity_id=device_tracker.entity
         firstly { () -> Promise<Void> in
             if let api = Current.apis.first {
                 return api.CallService(
@@ -879,7 +879,7 @@ extension IncomingURLHandler {
     }
 
     private func sendLocationURLHandler() {
-        // homeassistant://send_location/
+        // simonhome://send_location/
         firstly {
             Current.location.oneShotLocation(.URLScheme, nil)
         }.then { location in

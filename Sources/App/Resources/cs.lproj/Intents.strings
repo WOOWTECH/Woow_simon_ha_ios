@@ -1,12 +1,12 @@
 "0aqrcy" = "Selhání: ${error}";
-"2KWKqM" = "Selhání: Home Assistant není dostupný";
+"2KWKqM" = "Selhání: Simon SmartHome není dostupný";
 "2LIxe4" = "Selhání: ${error}";
 "2b0Uo4" = "Služba";
 "2yevCF" = "Které pipeline chcete použít?";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "Aktualizováno";
 "4tpAXn" = "Jen pro potvrzení, chtěli jste \"${server}\"?";
-"5ZzwZD" = "Selhání: Home Assistant není aktuálně dostupný";
+"5ZzwZD" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "5bVvn0" = "Aktualizace polohy se nezdařila: ${error}";
 "637QjD" = "Chyba";
 "6ozAdN" = "Obrázek z kamery";
@@ -29,7 +29,7 @@
 "DsasVx" = "Chyba";
 "EA0zLv" = "${count} voleb odpovídá \"${server}\".";
 "EWqRDj" = "Selhání: ${error}";
-"FBQiVD" = "Zavolat službu v instanci Home Assistanta";
+"FBQiVD" = "Zavolat službu v instanci Simon SmartHomea";
 "FZ9qkT" = "z - (Deprecated) Vykreslit šablonu";
 "FtQqoU" = "Poloha byla aktualizována";
 "GiSjQE" = "Selhání: ${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "Jen pro potvrzení, chtěli jste \"${server}\"?";
 "JFaYRG" = "Jen pro potvrzení, chtěli jste \"${pipeline}\"?";
 "K4xrvF" = "Chyba";
-"KHH48D" = "Selhání: Home Assistant není aktuálně dostupný";
+"KHH48D" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "KJS2jk" = "Selhání: ${error}";
 "KM7mXC" = "Akce";
 "KSmKl0" = "Voláno: ${domain}.${service}";
@@ -52,7 +52,7 @@
 "MwEpGz" = "Hotovo";
 "N9iJpK" = "z - (Deprecated) Získat obrázek z kamery";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "Vykreslí šablonu Home Assistanta";
+"NdG9Jz" = "Vykreslí šablonu Simon SmartHomea";
 "NsbUTz" = "Entita kamery";
 "Q2Qp4a" = "Akce";
 "QCGKRz" = "Jaký jazyk?";
@@ -60,7 +60,7 @@
 "QmGpOH" = "Chyba";
 "R2PmrD" = "Chcete asistenci pomocí hlasu?";
 "RCQAlr" = "z - (Deprecated) Získat obrázek z ${cameraID}";
-"RMQY3r" = "Odeslat polohu do Home Assistanta";
+"RMQY3r" = "Odeslat polohu do Simon SmartHomea";
 "RsOw3P" = "Šablona byla úspěšně vykreslena";
 "T06Fka" = "Otevřít stránku ve frontendu";
 "U4u9Xz" = "${count} voleb odpovídá \"${server}\".";
@@ -82,7 +82,7 @@
 "am5G4A" = "Jen pro potvrzení, chtěli jste \"${server}\"?";
 "cK9jdK" = "Selhání: ${error}";
 "cLmTme" = "Akce";
-"cuflz3" = "Selhání: Home Assistant není aktuálně dostupný";
+"cuflz3" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "d65H6l" = "z - (Deprecated) Assist s \"${text}\"";
 "dFHPYK" = "Provedeno ${action}";
 "eObn2i" = "Stránka";
@@ -91,13 +91,13 @@
 "fkQXDn" = "${count} voleb odpovídá \"${action}\".";
 "flUgtx" = "Která akce?";
 "fnz838" = "Senzory byly aktualizovány";
-"foI0Fv" = "Selhání: Home Assistant není aktuálně dostupný";
+"foI0Fv" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "ftQHJw" = "Který server?";
-"fuRWMi" = "z - (Deprecated) Odeslat ${location} do Home Assistanta";
+"fuRWMi" = "z - (Deprecated) Odeslat ${location} do Simon SmartHomea";
 "g8g7Af" = "Provést akci";
 "gI3mme" = "Jaká data služby chcete odeslat?";
 "gePUyy" = "Poloha";
-"glRCfJ" = "Selhání: Home Assistant není aktuálně dostupný";
+"glRCfJ" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "gv7Gg6" = "Poloha";
 "h1xQ53" = "z - (Deprecated) Aktualizovat senzory";
 "hKNPaD" = "Server";
@@ -115,7 +115,7 @@
 "lGqSSG" = "Aktualizace senzorů se nezdařila.";
 "lNmaCR" = "Šablona";
 "lxHlyQ" = "z - (Deprecated) Spustit událost";
-"mAibJP" = "Selhání: Home Assistant není aktuálně dostupný";
+"mAibJP" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "mJ6CrP" = "Selhalo odeslání ${eventName}: ${error}";
 "mZnRHS" = "${eventName} spuštěno";
 "mi6B62" = "Jaká data chcete s událostí odeslat?";
@@ -126,7 +126,7 @@
 "oHn0vD" = "Stránky";
 "oIWFyR" = "Selhání: ${error}";
 "onq5yE" = "Nepodařilo se zavolat službu s chybou: ${error}";
-"pQhTjo" = "Selhání: Home Assistant není aktuálně dostupný";
+"pQhTjo" = "Selhání: Simon SmartHome není aktuálně dostupný";
 "pjQR7t" = "z - (Deprecated) Aktualizovat senzory";
 "qYpzmu" = "Které stránky?";
 "qayMH6" = "z - (Deprecated) Zavolat službu";
@@ -145,9 +145,9 @@
 "tycImk" = "Provede akci definovanou v aplikaci";
 "uqeIcc" = "z - (Deprecated) Assist s \"${text}\"";
 "v7TSD5" = "z - (Deprecated) Odeslat polohu";
-"vAIAF2" = "Odeslat aktualizaci senzoru do Home Assistanta";
+"vAIAF2" = "Odeslat aktualizaci senzoru do Simon SmartHomea";
 "vebd70" = "Server";
-"wfPQQQ" = "Poslat událost do sběrnice událostí Home Assistanta";
+"wfPQQQ" = "Poslat událost do sběrnice událostí Simon SmartHomea";
 "x7FAm9" = "z - (Deprecated) (Starší) Assist v aplikaci";
 "xN51te" = "Výsledek";
 "xfXG6b" = "Který server?";

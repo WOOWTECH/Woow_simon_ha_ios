@@ -68,7 +68,7 @@ struct NotificationSoundsView: View {
         .toolbar {
             ToolbarItem(placement: .primaryAction) {
                 Button {
-                    if let url = URL(string: "https://companion.home-assistant.io/app/ios/notifications-sounds") {
+                    if let url = URL(string: "https://aiot.simon.io/app/ios/notifications-sounds") {
                         openURLInBrowser(url, viewControllerProvider.viewController)
                     }
                 } label: {

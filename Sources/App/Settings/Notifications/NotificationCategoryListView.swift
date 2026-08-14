@@ -149,7 +149,7 @@ struct NotificationCategoryListView: View {
     }
 
     private func openHelp() {
-        guard let url = URL(string: "https://companion.home-assistant.io/app/ios/actionable-notifications") else {
+        guard let url = URL(string: "https://aiot.simon.io/app/ios/actionable-notifications") else {
             return
         }
         // Pass the hosting view controller so the SafariInApp browser preference works

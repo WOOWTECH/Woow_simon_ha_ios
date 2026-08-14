@@ -1,12 +1,12 @@
 "0aqrcy" = "Nie udało się: ${error}";
-"2KWKqM" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"2KWKqM" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "2LIxe4" = "Nie udało się: ${error}";
 "2b0Uo4" = "Usługa";
 "2yevCF" = "Which pipeline do you want to use?";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "Zaktualizowano";
 "4tpAXn" = "Dla potwierdzenia, czy chciałeś '${server}'?";
-"5ZzwZD" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"5ZzwZD" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "5bVvn0" = "Nie udało się zaktualizować lokalizacji, wystąpił błąd: ${error}";
 "637QjD" = "Błąd";
 "6ozAdN" = "Obraz z kamery";
@@ -29,7 +29,7 @@
 "DsasVx" = "Błąd";
 "EA0zLv" = "There are ${count} options matching ‘${server}’.";
 "EWqRDj" = "Nie udało się: ${error}";
-"FBQiVD" = "Wywołaj usługę bezpośrednio w Home Assistant";
+"FBQiVD" = "Wywołaj usługę bezpośrednio w Simon SmartHome";
 "FZ9qkT" = "z - (Deprecated) Wyrenderuj szablon";
 "FtQqoU" = "Zaktualizowano lokalizację";
 "GiSjQE" = "Niepowodzenie: ${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "Dla potwierdzenia, czy chciałeś '${server}'?";
 "JFaYRG" = "Just to confirm, you wanted ‘${pipeline}’?";
 "K4xrvF" = "Błąd";
-"KHH48D" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"KHH48D" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "KJS2jk" = "Nie udało się: ${error}";
 "KM7mXC" = "Akcja";
 "KSmKl0" = "Called ${domain}.${service}";
@@ -52,7 +52,7 @@
 "MwEpGz" = "Gotowe";
 "N9iJpK" = "z - (Deprecated) Uzyskaj obraz z kamery";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "Renderuje szablon Home Assistant";
+"NdG9Jz" = "Renderuje szablon Simon SmartHome";
 "NsbUTz" = "Encja kamery";
 "Q2Qp4a" = "Akcja";
 "QCGKRz" = "Jaki język?";
@@ -60,7 +60,7 @@
 "QmGpOH" = "Błąd";
 "R2PmrD" = "Do you want assistance using voice?";
 "RCQAlr" = "z - (Deprecated) Pobierz obraz ${cameraID}";
-"RMQY3r" = "Wyślij lokalizację do Home Assistant";
+"RMQY3r" = "Wyślij lokalizację do Simon SmartHome";
 "RsOw3P" = "Pomyślnie wyrenderowano szablon";
 "T06Fka" = "Open a page in the frontend";
 "U4u9Xz" = "Istnieją ${count} opcje pasujące do '${server}'.";
@@ -82,7 +82,7 @@
 "am5G4A" = "Dla potwierdzenia, czy chciałeś '${server}'?";
 "cK9jdK" = "Nie udało się: ${error}";
 "cLmTme" = "Akcja";
-"cuflz3" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"cuflz3" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "d65H6l" = "z - (Deprecated) Assist with \"${text}\"";
 "dFHPYK" = "Wykonano ${action}";
 "eObn2i" = "Page";
@@ -91,13 +91,13 @@
 "fkQXDn" = "Istnieje ${count} opcji pasujących do ‘${action}’.";
 "flUgtx" = "Która akcja?";
 "fnz838" = "Zaktualizowano sensory.";
-"foI0Fv" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"foI0Fv" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "ftQHJw" = "Który serwer?";
-"fuRWMi" = "z - (Deprecated) Wyślij ${location} do Home Assistant";
+"fuRWMi" = "z - (Deprecated) Wyślij ${location} do Simon SmartHome";
 "g8g7Af" = "Wykonaj akcję";
 "gI3mme" = "Jakie dane usługi chcesz wysłać?";
 "gePUyy" = "Lokalizacja";
-"glRCfJ" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"glRCfJ" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "gv7Gg6" = "Lokalizacja";
 "h1xQ53" = "z - (Deprecated) Zaktualizuj sensory";
 "hKNPaD" = "Serwer";
@@ -115,7 +115,7 @@
 "lGqSSG" = "Nie udało się zaktualizować sensorów.";
 "lNmaCR" = "Szablon";
 "lxHlyQ" = "z - (Deprecated) Uruchom zdarzenie";
-"mAibJP" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"mAibJP" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "mJ6CrP" = "Nie udało się wysłać ${eventName} : ${error}";
 "mZnRHS" = "${eventName} fired";
 "mi6B62" = "Jakie dane chcesz wysłać ze zdarzeniem?";
@@ -126,7 +126,7 @@
 "oHn0vD" = "Strony";
 "oIWFyR" = "Nie udało się: ${error}";
 "onq5yE" = "Failed to call service with error: ${error}";
-"pQhTjo" = "Nie udało się, Home Assistant jest obecnie niedostępny";
+"pQhTjo" = "Nie udało się, Simon SmartHome jest obecnie niedostępny";
 "pjQR7t" = "z - (Deprecated) Zaktualizuj sensory";
 "qYpzmu" = "Które strony?";
 "qayMH6" = "z - (Deprecated) Wywołaj usługę";
@@ -145,9 +145,9 @@
 "tycImk" = "Wykonuje akcję zdefiniowaną w aplikacji";
 "uqeIcc" = "z - (Deprecated) Pomoc z \"${text}\"";
 "v7TSD5" = "z - (Deprecated) Wyślij lokalizację";
-"vAIAF2" = "Wyślij aktualizację sensora do Home Assistant";
+"vAIAF2" = "Wyślij aktualizację sensora do Simon SmartHome";
 "vebd70" = "Serwer";
-"wfPQQQ" = "Uruchom zdarzenie na magistrali zdarzeń Home Assistant'a";
+"wfPQQQ" = "Uruchom zdarzenie na magistrali zdarzeń Simon SmartHome'a";
 "x7FAm9" = "z - (Deprecated) Assist In App";
 "xN51te" = "Wynik";
 "xfXG6b" = "Który serwer?";

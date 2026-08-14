@@ -49,7 +49,7 @@ struct HAApp: App {
         .handlesExternalEvents(matching: [SceneActivity.onboarding.activityIdentifier])
     }
 
-    /// Routes deep links (`homeassistant://…`) and universal / NFC web links into `IncomingURLHandler` once
+    /// Routes deep links (`simonhome://…`) and universal / NFC web links into `IncomingURLHandler` once
     /// the app coordinator is available — replacing the deleted `WebViewSceneDelegate`'s
     /// `scene(_:openURLContexts:)` / `scene(_:continue:)` under the SwiftUI lifecycle.
     private func handleIncoming(url: URL) {

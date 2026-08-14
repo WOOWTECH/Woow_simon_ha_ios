@@ -1,12 +1,12 @@
 "0aqrcy" = "Misslyckades: ${error}";
-"2KWKqM" = "Misslyckades: Home Assistant är inte nåbar";
+"2KWKqM" = "Misslyckades: Simon SmartHome är inte nåbar";
 "2LIxe4" = "Misslyckades: ${error}";
 "2b0Uo4" = "Tjänst";
 "2yevCF" = "Vilken pipeline vill du använda?";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "Uppdaterad";
 "4tpAXn" = "För att bekräfta, du väljer ‘${server}’?";
-"5ZzwZD" = "Misslyckades: Home Assistant kan inte nås för tillfället";
+"5ZzwZD" = "Misslyckades: Simon SmartHome kan inte nås för tillfället";
 "5bVvn0" = "Misslyckades med att uppdatera plats: ${error}";
 "637QjD" = "Fel";
 "6ozAdN" = "Kamerabild";
@@ -29,7 +29,7 @@
 "DsasVx" = "Fel";
 "EA0zLv" = "Det finns ${count} alternativ som matchar '${server}'.";
 "EWqRDj" = "Misslyckades: ${error}";
-"FBQiVD" = "Anropa en tjänst på Home Assistant-instansen";
+"FBQiVD" = "Anropa en tjänst på Simon SmartHome-instansen";
 "FZ9qkT" = "z - (Deprecated) Rendera mall";
 "FtQqoU" = "Plats uppdaterad";
 "GiSjQE" = "Misslyckades: ${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "För att bekräfta, du väljer ‘${server}’?";
 "JFaYRG" = "Bara för att bekräfta, ville du ha '${pipeline}'?";
 "K4xrvF" = "Fel";
-"KHH48D" = "Misslyckades: Home Assistant kan inte nås för tillfället";
+"KHH48D" = "Misslyckades: Simon SmartHome kan inte nås för tillfället";
 "KJS2jk" = "Misslyckades: ${error}";
 "KM7mXC" = "Åtgärd";
 "KSmKl0" = "Anropade ${domain}.${service}";
@@ -52,7 +52,7 @@
 "MwEpGz" = "Klar";
 "N9iJpK" = "z - (Deprecated) Hämta kamerabild";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "Renderar Home Assistant-mallen";
+"NdG9Jz" = "Renderar Simon SmartHome-mallen";
 "NsbUTz" = "Kameraentitet";
 "Q2Qp4a" = "Åtgärd";
 "QCGKRz" = "Välj ett språk";
@@ -60,7 +60,7 @@
 "QmGpOH" = "Fel";
 "R2PmrD" = "Vill du ha hjälp med att använda rösten?";
 "RCQAlr" = "z - (Deprecated) Hämta bild från ${cameraID}";
-"RMQY3r" = "Skicka plats till Home Assistant";
+"RMQY3r" = "Skicka plats till Simon SmartHome";
 "RsOw3P" = "Lyckades rendera mall";
 "T06Fka" = "Öppna en sida i frontend";
 "U4u9Xz" = "Det finns ${count} alternativ som matchar '${server}'.";
@@ -82,7 +82,7 @@
 "am5G4A" = "För att bekräfta, du väljer ‘${server}’?";
 "cK9jdK" = "Misslyckades: ${error}";
 "cLmTme" = "Åtgärd";
-"cuflz3" = "Misslyckades: Home Assistant kan inte nås för tillfället";
+"cuflz3" = "Misslyckades: Simon SmartHome kan inte nås för tillfället";
 "d65H6l" = "z - (Deprecated) Hjälp till med \"${text}\"";
 "dFHPYK" = "Utförde ${action}";
 "eObn2i" = "Sida";
@@ -91,13 +91,13 @@
 "fkQXDn" = "Det finns ${count} möjliga matchningar till ’${action}’.";
 "flUgtx" = "Vilken åtgärd?";
 "fnz838" = "Sensorer uppdaterade";
-"foI0Fv" = "Misslyckades: Home Assistant är för närvarande inte tillgänglig";
+"foI0Fv" = "Misslyckades: Simon SmartHome är för närvarande inte tillgänglig";
 "ftQHJw" = "Vilken server?";
-"fuRWMi" = "z - (Deprecated) Skicka ${location} till Home Assistant";
+"fuRWMi" = "z - (Deprecated) Skicka ${location} till Simon SmartHome";
 "g8g7Af" = "Utför åtgärden";
 "gI3mme" = "Vilka tjänstedata vill du skicka?";
 "gePUyy" = "Plats";
-"glRCfJ" = "Misslyckades: Home Assistant är för närvarande inte tillgänglig";
+"glRCfJ" = "Misslyckades: Simon SmartHome är för närvarande inte tillgänglig";
 "gv7Gg6" = "Plats";
 "h1xQ53" = "z - (Deprecated) Uppdatera sensorer";
 "hKNPaD" = "Server";
@@ -115,7 +115,7 @@
 "lGqSSG" = "Kunde inte uppdatera sensorer.";
 "lNmaCR" = "Mall";
 "lxHlyQ" = "z - (Deprecated) Utlös händelse";
-"mAibJP" = "Misslyckades: Home Assistant är för närvarande inte tillgänglig";
+"mAibJP" = "Misslyckades: Simon SmartHome är för närvarande inte tillgänglig";
 "mJ6CrP" = "Misslyckades med att skicka ${eventName}: ${error}";
 "mZnRHS" = "${eventName} startad";
 "mi6B62" = "Vilka data vill du skicka med händelsen?";
@@ -126,7 +126,7 @@
 "oHn0vD" = "Sidor";
 "oIWFyR" = "Misslyckades: ${error}";
 "onq5yE" = "Misslyckades att anropa tjänsten, fick felet: ${error}";
-"pQhTjo" = "Misslyckades: Home Assistant kan inte nås för tillfället";
+"pQhTjo" = "Misslyckades: Simon SmartHome kan inte nås för tillfället";
 "pjQR7t" = "z - (Deprecated) Uppdatera sensorer";
 "qYpzmu" = "Vilka sidor?";
 "qayMH6" = "z - (Deprecated) Anropa tjänst";
@@ -145,9 +145,9 @@
 "tycImk" = "Utför en åtgärd definierad i appen";
 "uqeIcc" = "z - (Deprecated) Hjälp till med \"${text}\"";
 "v7TSD5" = "z - (Deprecated) Skicka plats";
-"vAIAF2" = "Skicka sensoruppdatering till Home Assistant";
+"vAIAF2" = "Skicka sensoruppdatering till Simon SmartHome";
 "vebd70" = "Server";
-"wfPQQQ" = "Skicka en händelse till Home Assistant händelse-anslutning";
+"wfPQQQ" = "Skicka en händelse till Simon SmartHome händelse-anslutning";
 "x7FAm9" = "z - (Deprecated) Assist In App";
 "xN51te" = "Resultat";
 "xfXG6b" = "Vilken server?";

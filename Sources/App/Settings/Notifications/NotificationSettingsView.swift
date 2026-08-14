@@ -93,7 +93,7 @@ struct NotificationSettingsView: View {
                 }
             }
 
-            Link(destination: URL(string: "https://companion.home-assistant.io/app/ios/notifications")!) {
+            Link(destination: URL(string: "https://aiot.simon.io/app/ios/notifications")!) {
                 HStack {
                     Text(L10n.SettingsDetails.Notifications.documentation)
                     Spacer()

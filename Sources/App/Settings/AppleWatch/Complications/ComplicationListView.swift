@@ -41,7 +41,7 @@ struct ComplicationListView: View {
         Section {
             Text(L10n.Watch.Configurator.List.description)
                 .foregroundColor(.primary)
-            Link(destination: URL(string: "https://companion.home-assistant.io/app/ios/apple-watch")!) {
+            Link(destination: URL(string: "https://aiot.simon.io/app/ios/apple-watch")!) {
                 HStack {
                     Text(L10n.Nfc.List.learnMore)
                     Spacer()

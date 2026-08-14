@@ -3414,7 +3414,7 @@
 		B655E923227FF19C00CFDC94 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Intents.strings; sourceTree = "<group>"; };
 		B655E925227FF19D00CFDC94 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Intents.strings; sourceTree = "<group>"; };
 		B655E927227FF19E00CFDC94 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Intents.strings; sourceTree = "<group>"; };
-		B657A8E61CA646EB00121384 /* Home Assistant Δ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Home Assistant Δ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B657A8E61CA646EB00121384 /* Simon SmartHome Δ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Simon SmartHome Δ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B657A8E91CA646EB00121384 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		B657A8F51CA646EB00121384 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B657A8F71CA646EB00121384 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -6936,7 +6936,7 @@
 		B657A8E71CA646EB00121384 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B657A8E61CA646EB00121384 /* Home Assistant Δ.app */,
+				B657A8E61CA646EB00121384 /* Simon SmartHome Δ.app */,
 				B657A8FC1CA646EB00121384 /* HomeAssistant-Tests-App.xctest */,
 				B657A9071CA646EB00121384 /* HomeAssistant-Tests-UI.xctest */,
 				B6AAD7A11D827DD40090B220 /* HomeAssistant-Extensions-NotificationService.appex */,
@@ -7927,7 +7927,7 @@
 				42991E602FF4474500C2C76B /* ImproviOS */,
 			);
 			productName = HomeAssistant;
-			productReference = B657A8E61CA646EB00121384 /* Home Assistant Δ.app */;
+			productReference = B657A8E61CA646EB00121384 /* Simon SmartHome Δ.app */;
 			productType = "com.apple.product-type.application";
 		};
 		B657A8FB1CA646EB00121384 /* Tests-App */ = {
@@ -11156,7 +11156,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_MODULE_NAME = HomeAssistant;
-				PRODUCT_NAME = HomeAssistant;
+				PRODUCT_NAME = SimonSmartHome;
 			};
 			name = Debug;
 		};
@@ -11164,7 +11164,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PRODUCT_MODULE_NAME = HomeAssistant;
-				PRODUCT_NAME = HomeAssistant;
+				PRODUCT_NAME = SimonSmartHome;
 			};
 			name = Release;
 		};
@@ -11172,8 +11172,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1FAFCDC6866E158B337576C2 /* Pods-iOS-Extensions-Share.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Share/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11189,8 +11189,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 110312E8DB9204B35263D28D /* Pods-iOS-Extensions-Share.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Share/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11246,8 +11246,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Widgets/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11267,8 +11267,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Widgets/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11286,8 +11286,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 40FC495ADBFF44505D255FF1 /* Pods-iOS-Extensions-Matter.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Matter/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				PROVISIONING_SUFFIX = .Matter;
@@ -11299,8 +11299,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C1694CFE2AAC39ABD6266B1D /* Pods-iOS-Extensions-Matter.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Matter/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				PROVISIONING_SUFFIX = .Matter;
@@ -11312,7 +11312,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 6563AFB7BDAF57478CA18D9B /* Pods-iOS-Extensions-PushProvider.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/PushProvider/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PROVISIONING_SUFFIX = .PushProvider;
@@ -11323,7 +11323,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B8B29386598719DCBBC161B /* Pods-iOS-Extensions-PushProvider.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/PushProvider/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				PROVISIONING_SUFFIX = .PushProvider;
@@ -11333,10 +11333,10 @@
 		11DE9D9025B6103D0081C0ED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Configuration/Entitlements/Launcher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Launcher.entitlements";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				INFOPLIST_FILE = Sources/Launcher/Info.plist;
-				PRODUCT_NAME = "Home Assistant Launcher";
+				PRODUCT_NAME = "Simon SmartHome Launcher";
 				PROVISIONING_SUFFIX = .Launcher;
 				SDKROOT = macosx;
 			};
@@ -11345,10 +11345,10 @@
 		11DE9D9125B6103D0081C0ED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Configuration/Entitlements/Launcher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Launcher.entitlements";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				INFOPLIST_FILE = Sources/Launcher/Info.plist;
-				PRODUCT_NAME = "Home Assistant Launcher";
+				PRODUCT_NAME = "Simon SmartHome Launcher";
 				PROVISIONING_SUFFIX = .Launcher;
 				SDKROOT = macosx;
 			};
@@ -11485,8 +11485,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CA722B125EDED73BB36596DA /* Pods-iOS-Extensions-NotificationContent.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/NotificationContent/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -11503,8 +11503,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC24B1CAB85767B8171BB850 /* Pods-iOS-Extensions-NotificationContent.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/NotificationContent/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -11540,10 +11540,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/App-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/App-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/App-catalyst.entitlements";
 				DISABLE_SWIFTLINT = 1;
-				ENV_URL_HANDLER = "homeassistant-dev";
+				ENV_URL_HANDLER = simonhome;
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11568,7 +11568,7 @@
 					"-fprofile-instr-generate",
 				);
 				PRODUCT_MODULE_NAME = HomeAssistant;
-				PRODUCT_NAME = "Home Assistant Δ";
+				PRODUCT_NAME = "Simon SmartHome Δ";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
 			};
@@ -11581,10 +11581,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon${BUNDLE_ID_SUFFIX}";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = accentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/App-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/App-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/App-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/App-catalyst.entitlements";
 				DISABLE_SWIFTLINT = 1;
-				ENV_URL_HANDLER = homeassistant;
+				ENV_URL_HANDLER = simonhome;
 				INFOPLIST_FILE = Sources/App/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11609,7 +11609,7 @@
 					"-fprofile-instr-generate",
 				);
 				PRODUCT_MODULE_NAME = HomeAssistant;
-				PRODUCT_NAME = "Home Assistant";
+				PRODUCT_NAME = "Simon SmartHome";
 				SKIP_INSTALL = NO;
 				SUPPORTS_MACCATALYST = YES;
 			};
@@ -11622,7 +11622,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Tests/App/Resources/Info.plist;
 				PROVISIONING_SUFFIX = .HomeAssistantTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Assistant Δ.app/Home Assistant Δ";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simon SmartHome Δ.app/Simon SmartHome Δ";
 			};
 			name = Debug;
 		};
@@ -11633,7 +11633,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = Tests/App/Resources/Info.plist;
 				PROVISIONING_SUFFIX = .HomeAssistantTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Home Assistant Δ.app/Home Assistant Δ";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Simon SmartHome Δ.app/Simon SmartHome Δ";
 			};
 			name = Release;
 		};
@@ -11669,8 +11669,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 50D9C22ED2834EC9DAAC63AC /* Pods-iOS-Extensions-Intents.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Intents/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -11694,8 +11694,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEF9A7008EFA4A6FC9E02B5E /* Pods-iOS-Extensions-Intents.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Intents/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -11771,8 +11771,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09DFDC1BD6D3E07060517D1D /* Pods-iOS-Extensions-NotificationService.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/NotificationService/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11788,8 +11788,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7DC07BDAC69AD95BDEFD8AFF /* Pods-iOS-Extensions-NotificationService.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
-				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/Extension-catalyst.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
+				"CODE_SIGN_ENTITLEMENTS[sdk=macosx*]" = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-catalyst.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/NotificationService/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11845,7 +11845,7 @@
 			baseConfigurationReference = 9D84964A844E6CD21F16D3AB /* Pods-watchOS-WatchExtension-Watch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Watch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -11863,7 +11863,7 @@
 			baseConfigurationReference = 2A674A3ACB31BFCEB70423FE /* Pods-watchOS-WatchExtension-Watch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/Extension-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Configuration/Entitlements/$(ENTITLEMENTS_VARIANT)/Extension-ios.entitlements";
 				INFOPLIST_FILE = Sources/Extensions/Watch/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

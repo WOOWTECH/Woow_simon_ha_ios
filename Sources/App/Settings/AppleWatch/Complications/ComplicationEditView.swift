@@ -53,7 +53,7 @@ struct ComplicationEditView: View {
                 .disabled(!viewModel.isValid)
             }
             ToolbarItem(placement: .primaryAction) {
-                Link(destination: URL(string: "https://companion.home-assistant.io/app/ios/apple-watch")!) {
+                Link(destination: URL(string: "https://aiot.simon.io/app/ios/apple-watch")!) {
                     Image(systemSymbol: .questionmarkCircle)
                 }
             }

@@ -32,7 +32,7 @@ struct AppMenuBarCommands: Commands {
 
         CommandGroup(replacing: .help) {
             Button(L10n.Menu.Help.help(appName)) {
-                openURLInBrowser(URL(string: "https://companion.home-assistant.io")!, nil)
+                openURLInBrowser(URL(string: "https://aiot.simon.io")!, nil)
             }
         }
     }

@@ -19,7 +19,7 @@ class OnboardingAuthLoginViewControllerImplTests: XCTestCase {
     }
 
     func testDecisionHandlerWithHomeassistantScheme() {
-        let url = URL(string: "homeassistant://test")!
+        let url = URL(string: "simonhome://test")!
 
         let expectation = expectation(description: "decision handler")
         controller.webView(
@@ -46,7 +46,7 @@ class OnboardingAuthLoginViewControllerImplTests: XCTestCase {
         )
         wait(for: [httpExpectation], timeout: 10.0)
 
-        let callbackURL = URL(string: "homeassistant://auth-callback?code=code_123")!
+        let callbackURL = URL(string: "simonhome://auth-callback?code=code_123")!
         let callbackExpectation = expectation(description: "callback nav")
         controller.webView(
             controller.webViewForTests,

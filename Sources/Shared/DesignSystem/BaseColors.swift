@@ -145,6 +145,6 @@ public extension Color {
     static var yellow90 = Color(hex: "0xFFFFE495")
     static var yellow95 = Color(hex: "0xFFFEF3CD")
 
-    static var brandBlue = Color(hex: "0xFF18BCF2")
+    static var brandBlue = Color(hex: "0xFF0060A6")
     static var brandBackground = Color(hex: "0xFFF2F4F9")
 }

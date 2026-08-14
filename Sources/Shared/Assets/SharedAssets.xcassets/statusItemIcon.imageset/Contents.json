@@ -1,16 +1,15 @@
 {
-  "images" : [
+  "images": [
     {
-      "filename" : "home-assistant-logomark-monochrome-on-light-small.pdf",
-      "idiom" : "universal"
+      "filename": "home-assistant-logomark-monochrome-on-light-small.png",
+      "idiom": "universal"
     }
   ],
-  "info" : {
-    "author" : "xcode",
-    "version" : 1
+  "info": {
+    "author": "xcode",
+    "version": 1
   },
-  "properties" : {
-    "preserves-vector-representation" : true,
-    "template-rendering-intent" : "template"
+  "properties": {
+    "template-rendering-intent": "template"
   }
 }

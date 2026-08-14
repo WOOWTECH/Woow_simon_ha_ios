@@ -1,12 +1,12 @@
 "0aqrcy" = "Сбой: ${error}";
-"2KWKqM" = "Ошибка: Home Assistant не отвечает";
+"2KWKqM" = "Ошибка: Simon SmartHome не отвечает";
 "2LIxe4" = "Сбой: ${error}";
 "2b0Uo4" = "Служба";
 "2yevCF" = "Какой обработчик вы хотите использовать?";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "Обновлено";
 "4tpAXn" = "Просто, чтобы подтвердить, вы хотели ‘${server}’?";
-"5ZzwZD" = "Ошибка: Home Assistant в настоящее время недоступен";
+"5ZzwZD" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "5bVvn0" = "Не удалось обновить местоположение: ${error}";
 "637QjD" = "Ошибка";
 "6ozAdN" = "Изображение с камеры";
@@ -29,7 +29,7 @@
 "DsasVx" = "Ошибка";
 "EA0zLv" = "Есть ${count} вариантов, соответствующих '${server} '.";
 "EWqRDj" = "Сбой: ${error}";
-"FBQiVD" = "Вызывает службу на экземпляре Home Assistant";
+"FBQiVD" = "Вызывает службу на экземпляре Simon SmartHome";
 "FZ9qkT" = "z - (Deprecated) Интерпретировать шаблон";
 "FtQqoU" = "Местоположение обновлено";
 "GiSjQE" = "Сбой: ${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "Просто, чтобы подтвердить, вы хотели ‘${server}’?";
 "JFaYRG" = "Подтвердите, вы имели в виду ‘${pipeline}’?";
 "K4xrvF" = "Ошибка";
-"KHH48D" = "Ошибка: Home Assistant в настоящее время недоступен";
+"KHH48D" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "KJS2jk" = "Сбой: ${error}";
 "KM7mXC" = "Действие";
 "KSmKl0" = "Вызвана ${domain}.${service}";
@@ -52,7 +52,7 @@
 "MwEpGz" = "Готово";
 "N9iJpK" = "z - (Deprecated) Получить изображение с камеры";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "Интерпретирует шаблон Home Assistant";
+"NdG9Jz" = "Интерпретирует шаблон Simon SmartHome";
 "NsbUTz" = "Объект камеры";
 "Q2Qp4a" = "Действие";
 "QCGKRz" = "Какой язык?";
@@ -60,7 +60,7 @@
 "QmGpOH" = "Ошибка";
 "R2PmrD" = "Вам нужна помощь с помощью голоса?";
 "RCQAlr" = "z - (Deprecated) Получить изображение с ${cameraID}";
-"RMQY3r" = "Отправить местоположение на Home Assistant";
+"RMQY3r" = "Отправить местоположение на Simon SmartHome";
 "RsOw3P" = "Шаблон успешно интерпретирован";
 "T06Fka" = "Открыть страницу интерфейса";
 "U4u9Xz" = "Есть ${count} вариантов, соответствующих '${server} '.";
@@ -82,7 +82,7 @@
 "am5G4A" = "Просто, чтобы подтвердить, вы хотели ‘${server}’?";
 "cK9jdK" = "Сбой: ${error}";
 "cLmTme" = "Действие";
-"cuflz3" = "Ошибка: Home Assistant в настоящее время недоступен";
+"cuflz3" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "d65H6l" = "z - (Deprecated) Assist с \"${text}\"";
 "dFHPYK" = "Выполнено ${action}";
 "eObn2i" = "Страница";
@@ -91,13 +91,13 @@
 "fkQXDn" = "Есть ${count} вариантов, соответствующих \"${action}\".";
 "flUgtx" = "Какое действие?";
 "fnz838" = "Датчики обновлены";
-"foI0Fv" = "Ошибка: Home Assistant в настоящее время недоступен";
+"foI0Fv" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "ftQHJw" = "Какой сервер?";
-"fuRWMi" = "z - (Deprecated) Отправить ${location} в Home Assistant";
+"fuRWMi" = "z - (Deprecated) Отправить ${location} в Simon SmartHome";
 "g8g7Af" = "Выполнить действие";
 "gI3mme" = "Какие данные службы вы хотите отправить?";
 "gePUyy" = "Местоположение";
-"glRCfJ" = "Ошибка: Home Assistant в настоящее время недоступен";
+"glRCfJ" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "gv7Gg6" = "Местоположение";
 "h1xQ53" = "z - (Deprecated) Обновление датчиков";
 "hKNPaD" = "Сервер";
@@ -115,7 +115,7 @@
 "lGqSSG" = "Не удалось обновить датчики.";
 "lNmaCR" = "Шаблон";
 "lxHlyQ" = "z - (Deprecated) Запустить событие";
-"mAibJP" = "Ошибка: Home Assistant в настоящее время недоступен";
+"mAibJP" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "mJ6CrP" = "Не удалось отправить ${eventName}: ${error}";
 "mZnRHS" = "${eventName} запущено";
 "mi6B62" = "Какие данные вы хотите отправить вместе с событием?";
@@ -126,7 +126,7 @@
 "oHn0vD" = "Страницы";
 "oIWFyR" = "Сбой: ${error}";
 "onq5yE" = "Не удалось вызвать службу из-за ошибки: ${error}";
-"pQhTjo" = "Ошибка: Home Assistant в настоящее время недоступен";
+"pQhTjo" = "Ошибка: Simon SmartHome в настоящее время недоступен";
 "pjQR7t" = "z - (Deprecated) Обновление датчиков";
 "qYpzmu" = "Какие страницы?";
 "qayMH6" = "z - (Deprecated) Вызвать службу";
@@ -145,9 +145,9 @@
 "tycImk" = "Выполняет действие, определенное в приложении";
 "uqeIcc" = "z - (Deprecated) Assist с \"${text}\"";
 "v7TSD5" = "z - (Deprecated) Отправить местоположение";
-"vAIAF2" = "Отправляет обновление датчика в Home Assistant";
+"vAIAF2" = "Отправляет обновление датчика в Simon SmartHome";
 "vebd70" = "Сервер";
-"wfPQQQ" = "Запуск события в шину событий Home Assistant";
+"wfPQQQ" = "Запуск события в шину событий Simon SmartHome";
 "x7FAm9" = "z - (Deprecated) Assist в приложении";
 "xN51te" = "Результат";
 "xfXG6b" = "Какой сервер?";

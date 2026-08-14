@@ -364,7 +364,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 alert.addAction(UIAlertAction(title: L10n.Nfc.List.learnMore, style: .default, handler: { _ in
                     userDefaults.set(true, forKey: seenKey)
                     openURLInBrowser(
-                        URL(string: "https://companion.home-assistant.io/app/ios/actionable-notifications")!,
+                        URL(string: "https://aiot.simon.io/app/ios/actionable-notifications")!,
                         nil
                     )
                 }))

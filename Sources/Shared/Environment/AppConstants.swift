@@ -6,34 +6,34 @@ import Version
 /// Contains shared constants
 public enum AppConstants {
     public enum WebURLs {
-        public static var homeAssistant = URL(string: "https://www.home-assistant.io")!
-        public static var homeAssistantGetStarted = URL(string: "https://www.home-assistant.io/installation/")!
+        public static var homeAssistant = URL(string: "https://aiot.simon.io")!
+        public static var homeAssistantGetStarted = URL(string: "https://aiot.simon.io/installation/")!
         public static var homeAssistantCompanionGetStarted =
-            URL(string: "https://companion.home-assistant.io/docs/getting_started/")!
-        public static var companionAppDocs = URL(string: "https://companion.home-assistant.io")!
+            URL(string: "https://aiot.simon.io/docs/getting_started/")!
+        public static var companionAppDocs = URL(string: "https://aiot.simon.io")!
         public static var companionAppDocsTroubleshooting =
-            URL(string: "https://companion.home-assistant.io/docs/troubleshooting/errors")!
-        public static var beta = URL(string: "https://companion.home-assistant.io/app/ios/beta")!
-        public static var betaMac = URL(string: "https://companion.home-assistant.io/app/ios/beta_mac")!
-        public static var review = URL(string: "https://companion.home-assistant.io/app/ios/review")!
-        public static var reviewMac = URL(string: "https://companion.home-assistant.io/app/ios/review_mac")!
-        public static var translate = URL(string: "https://companion.home-assistant.io/app/ios/translate")!
-        public static var forums = URL(string: "https://community.home-assistant.io/")!
-        public static var chat = URL(string: "https://companion.home-assistant.io/app/ios/chat")!
-        public static var twitter = URL(string: "https://twitter.com/home_assistant")!
-        public static var facebook = URL(string: "https://www.facebook.com/292963007723872")!
-        public static var repo = URL(string: "https://companion.home-assistant.io/app/ios/repo")!
-        public static var issues = URL(string: "https://companion.home-assistant.io/app/ios/issues")!
+            URL(string: "https://aiot.simon.io/docs/troubleshooting/errors")!
+        public static var beta = URL(string: "https://aiot.simon.io/app/ios/beta")!
+        public static var betaMac = URL(string: "https://aiot.simon.io/app/ios/beta_mac")!
+        public static var review = URL(string: "https://aiot.simon.io/app/ios/review")!
+        public static var reviewMac = URL(string: "https://aiot.simon.io/app/ios/review_mac")!
+        public static var translate = URL(string: "https://aiot.simon.io/app/ios/translate")!
+        public static var forums = URL(string: "https://aiot.simon.io/")!
+        public static var chat = URL(string: "https://aiot.simon.io/app/ios/chat")!
+        public static var twitter = URL(string: "https://aiot.simon.io")!
+        public static var facebook = URL(string: "https://aiot.simon.io")!
+        public static var repo = URL(string: "https://aiot.simon.io/app/ios/repo")!
+        public static var issues = URL(string: "https://aiot.simon.io/app/ios/issues")!
         public static var companionAppConnectionSecurityLevel =
-            URL(string: "https://companion.home-assistant.io/docs/getting_started/connection-security-level")!
+            URL(string: "https://aiot.simon.io/docs/getting_started/connection-security-level")!
         public static var companionLocalPush =
-            URL(string: "https://companion.home-assistant.io/app/ios/local-push")!
+            URL(string: "https://aiot.simon.io/app/ios/local-push")!
         public static var nfcDocs =
-            URL(string: "https://companion.home-assistant.io/app/ios/nfc")!
+            URL(string: "https://aiot.simon.io/app/ios/nfc")!
         public static var liveActivitiesDocs =
-            URL(string: "https://companion.home-assistant.io/docs/notifications/live-activities")!
+            URL(string: "https://aiot.simon.io/docs/notifications/live-activities")!
         public static var appleDropSupportiOS15 =
-            URL(string: "https://ohf.to/ha/apple-drop-support")!
+            URL(string: "https://aiot.simon.io")!
     }
 
     public enum QueryItems: String, CaseIterable {
@@ -104,15 +104,15 @@ public enum AppConstants {
     public static var deeplinkURL: URL {
         switch Current.appConfiguration {
         case .debug:
-            return URL(string: "homeassistant-dev://")!
+            return URL(string: "simonhome://")!
         default:
-            return URL(string: "homeassistant://")!
+            return URL(string: "simonhome://")!
         }
     }
 
     /// Roots a scheme-less, slash-less navigation path (`map/0` → `/map/0`) so an HA path that is
     /// missing its leading slash still resolves in the frontend. Anything already rooted, or that
-    /// carries a scheme — `https://`, `mailto:`, or the app's own `homeassistant://` deep links —
+    /// carries a scheme — `https://`, `mailto:`, or the app's own `simonhome://` deep links —
     /// is returned unchanged, so external URLs open in the browser and deep links are handled by
     /// the URL handler as deep links rather than being coerced into a path.
     public static func normalizedNavigationDestination(_ raw: String) -> String {

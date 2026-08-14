@@ -29,11 +29,11 @@ enum AuthenticationRoute {
     // MARK: - Private helpers
 
     private var clientID: String {
-        var clientID = "https://home-assistant.io/iOS"
+        var clientID = "https://woowtech.github.io/Woow_simon_ha_app/android"
 
         // swiftlint:disable prohibit_environment_assignment
         if Current.appConfiguration == .debug {
-            clientID = "https://home-assistant.io/iOS/dev-auth"
+            clientID = "https://woowtech.github.io/Woow_simon_ha_app/android"
         }
         // swiftlint:enable prohibit_environment_assignment
 

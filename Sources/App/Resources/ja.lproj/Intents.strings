@@ -1,12 +1,12 @@
 "0aqrcy" = "失敗: ${error}";
-"2KWKqM" = "失敗しました: Home Assistantにアクセスできません";
+"2KWKqM" = "失敗しました: Simon SmartHomeにアクセスできません";
 "2LIxe4" = "失敗: ${error}";
 "2b0Uo4" = "サービス";
 "2yevCF" = "どのパイプラインを使用しますか?";
 "3jKamg" = "{{ now() }}";
 "4fFx9y" = "更新しました";
 "4tpAXn" = "確認のために、 ‘${server}’ が必要ですか？";
-"5ZzwZD" = "失敗しました: Home Assistantにアクセスできません";
+"5ZzwZD" = "失敗しました: Simon SmartHomeにアクセスできません";
 "5bVvn0" = "場所の更新に失敗しました: ${error}";
 "637QjD" = "エラー";
 "6ozAdN" = "カメラ画像";
@@ -29,7 +29,7 @@
 "DsasVx" = "エラー";
 "EA0zLv" = "‘${server}’ に一致する ${count} オプションがあります。";
 "EWqRDj" = "失敗: ${error}";
-"FBQiVD" = "Home Assistantインスタンスでサービスを呼び出す";
+"FBQiVD" = "Simon SmartHomeインスタンスでサービスを呼び出す";
 "FZ9qkT" = "z - (Deprecated) レンダリングテンプレート";
 "FtQqoU" = "場所が更新されました";
 "GiSjQE" = "失敗: ${error}";
@@ -40,7 +40,7 @@
 "JBMp1T" = "確認のために、 ‘${server}’ が必要ですか？";
 "JFaYRG" = "確認ですが、「${pipeline} 」が必要でしたか?";
 "K4xrvF" = "エラー";
-"KHH48D" = "失敗しました: Home Assistantにアクセスできません";
+"KHH48D" = "失敗しました: Simon SmartHomeにアクセスできません";
 "KJS2jk" = "失敗: ${error}";
 "KM7mXC" = "アクション";
 "KSmKl0" = "呼び出し(Called) ${domain}。${service}";
@@ -52,7 +52,7 @@
 "MwEpGz" = "完了";
 "N9iJpK" = "z - (Deprecated) カメラ画像を取得";
 "NUF0Pa" = "${result}";
-"NdG9Jz" = "Home Assistantのテンプレートをレンダリングする";
+"NdG9Jz" = "Simon SmartHomeのテンプレートをレンダリングする";
 "NsbUTz" = "カメラエンティティ";
 "Q2Qp4a" = "アクション";
 "QCGKRz" = "どの言語ですか？";
@@ -60,7 +60,7 @@
 "QmGpOH" = "エラー";
 "R2PmrD" = "音声によるサポートが必要ですか?";
 "RCQAlr" = "z - (Deprecated) ${cameraID} の画像を取得";
-"RMQY3r" = "Home Assistantに位置情報を送信する";
+"RMQY3r" = "Simon SmartHomeに位置情報を送信する";
 "RsOw3P" = "テンプレートのレンダリングに成功";
 "T06Fka" = "フロントエンドでページを開く";
 "U4u9Xz" = "‘${server}’ に一致する ${count} オプションがあります。";
@@ -82,7 +82,7 @@
 "am5G4A" = "確認のために、 ‘${server}’ が必要ですか？";
 "cK9jdK" = "失敗: ${error}";
 "cLmTme" = "アクション";
-"cuflz3" = "失敗しました: Home Assistantに現在アクセスできません";
+"cuflz3" = "失敗しました: Simon SmartHomeに現在アクセスできません";
 "d65H6l" = "z - (Deprecated) \"${text}\" でアシストする";
 "dFHPYK" = "${action} を実行しました";
 "eObn2i" = "ページ";
@@ -91,13 +91,13 @@
 "fkQXDn" = "${count} にマッチするオプションが、‘${action}’ 個あります。";
 "flUgtx" = "どのアクション？";
 "fnz838" = "センサーが更新されました";
-"foI0Fv" = "失敗しました: Home Assistantに現在アクセスできません";
+"foI0Fv" = "失敗しました: Simon SmartHomeに現在アクセスできません";
 "ftQHJw" = "どのサーバーですか？";
-"fuRWMi" = "z - (Deprecated) Home Assistantへ、${location} を送信";
+"fuRWMi" = "z - (Deprecated) Simon SmartHomeへ、${location} を送信";
 "g8g7Af" = "アクションの実行";
 "gI3mme" = "どのサービスデータを送信しますか？";
 "gePUyy" = "ロケーション";
-"glRCfJ" = "失敗しました: Home Assistantにアクセスできません";
+"glRCfJ" = "失敗しました: Simon SmartHomeにアクセスできません";
 "gv7Gg6" = "ロケーション";
 "h1xQ53" = "z - (Deprecated) センサーの更新";
 "hKNPaD" = "サーバー";
@@ -115,7 +115,7 @@
 "lGqSSG" = "センサーの更新に失敗しました。";
 "lNmaCR" = "テンプレート";
 "lxHlyQ" = "z - (Deprecated) Fire event";
-"mAibJP" = "失敗しました: Home Assistantにアクセスできません";
+"mAibJP" = "失敗しました: Simon SmartHomeにアクセスできません";
 "mJ6CrP" = "${eventName} の送信に失敗しました: ${error}";
 "mZnRHS" = "${eventName} が発生しました";
 "mi6B62" = "イベントでどのようなデータを送信しますか？";
@@ -126,7 +126,7 @@
 "oHn0vD" = "ページ";
 "oIWFyR" = "失敗: ${error}";
 "onq5yE" = "エラーでサービスを呼び出すことができませんでした: ${error}";
-"pQhTjo" = "失敗しました: Home Assistantに現在アクセスできません";
+"pQhTjo" = "失敗しました: Simon SmartHomeに現在アクセスできません";
 "pjQR7t" = "z - (Deprecated) センサーの更新";
 "qYpzmu" = "どのページ？";
 "qayMH6" = "z - (Deprecated) サービスの呼び出し";
@@ -145,9 +145,9 @@
 "tycImk" = "アプリで定義されたアクションを実行します";
 "uqeIcc" = "z - (Deprecated) \"${text}\" でアシストする";
 "v7TSD5" = "z - (Deprecated) 場所を送信";
-"vAIAF2" = "センサーの更新をHome Assistantに送信する";
+"vAIAF2" = "センサーの更新をSimon SmartHomeに送信する";
 "vebd70" = "サーバー";
-"wfPQQQ" = "Home Assistantのイベントバスにイベントを発生させる";
+"wfPQQQ" = "Simon SmartHomeのイベントバスにイベントを発生させる";
 "x7FAm9" = "z - (Deprecated) Assist In App";
 "xN51te" = "結果";
 "xfXG6b" = "どのサーバーですか？";

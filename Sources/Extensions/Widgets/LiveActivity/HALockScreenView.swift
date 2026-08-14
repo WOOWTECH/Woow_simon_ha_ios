@@ -148,7 +148,7 @@ struct HALockScreenView: View {
 
 enum HAActivityVisualStyle {
     /// Hex string for Home Assistant brand blue — used for UIColor(hex:) fallback.
-    private static let haBlueHex = "#03A9F4"
+    private static let haBlueHex = "#0060A6"
 
     /// Treats nil, empty, or whitespace-only as "unset" so the caller's default applies — an empty
     /// `background_color`/`text_color` would otherwise parse to transparent via UIColor(hex:).
